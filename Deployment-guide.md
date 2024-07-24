@@ -17,4 +17,12 @@ To begin, you will need:
   2. Create a list named 'Prompts'.
   3. Create the following columns:
 
-
+| Column Name    | Type | Values |
+| -------- | ------- | ------- | 
+| Prompt  | Multiple lines of text    |
+| Likes | Number     |
+| Share Location | Choice     | Community, Team, Group Chat, Users |
+| Users    | Person or Group (Allow multiple selections)  |
+| TeamId    | Single line of text  |
+| ChannelId    | Single line of text  |
+| GroupChatId    | Single line of text  |
