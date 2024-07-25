@@ -21,7 +21,7 @@ To begin, you will need:
 | -------- | ------- | ------- | 
 | Prompt  | Multiple lines of text    |
 | Likes | Number     |
-| Share Location | Choice     | Community, Team, Group Chat, Users |
+| ShareLocation | Choice     | Community, Team, Group Chat, Users |
 | Users    | Person or Group (Allow multiple selections)  |
 | TeamId    | Single line of text  |
 | ChannelId    | Single line of text  |
