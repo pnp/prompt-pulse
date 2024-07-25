@@ -1,5 +1,7 @@
 # Deployment guide
 
+Please note - this deployment guide assumes a proficient level of knowledge in deploying Power Apps solutions and managing SharePoint list permissions.
+
 ## Prerequisites
 
 To begin, you will need:
@@ -48,3 +50,18 @@ To begin, you will need:
 3. Click on **Import**.
 4. Upload the solution zip file and click **Next**.
 5. 
+
+## Step 3: Add the app to Teams (Optional)
+
+1. Navigate to **Power Apps** as the account you wish to install the app for and click 'Apps' in the left pane, you should see the Prompt Pulse Power App. You may need to select the correct Environment in which you deployed the solution from the Environment menu at the top.
+2. Select the app and click 'Add to Teams' from the top menu bar.
+
+At this point you have two options:
+
+Add the app to Teams globally using policies in the Teams Admin Center OR sideload the app into the Teams client and install for the current logged in user only.
+
+3. If you wish to sideload the app, click the 'Add to Teans' option in the dialog that appears. The Teams client will open (you may choose the web client or desktop) and the app will install for the current logged in user.
+   
+If you wish to roll the app out via policies, please refer to our general documentation on docs.microsoft.com for how to upload to the Teams Admin Center and deploy globally.
+
+Prompt Pulse can be pre-installed for all users and optionally pinned to the rail if you wish. Or you can deploy the app and allow users to add it to their Teams as a tab.
