@@ -19,7 +19,6 @@ Deployment is straightforward and quick, not necessitating any premium connector
 
 For more information check out the [Overview](Documentation/Overview.md)
 
-
 ## Capabilities
 
 Prompt Pulse provides the following capabilities:
