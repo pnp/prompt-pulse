@@ -43,16 +43,31 @@ To begin, you will need:
 | LikedPrompts | Lookup     | Source list = 'Prompts', Select a column = 'ID' |
 | TutorialComplete | Yes/No     | Default value = No |
 
+6. Create a list name 'Configuration'.
+7. Create the following columns:
+
+| Column Name    | Type |
+| -------- | ------- | 
+| Value  | Single line of text   
+
+8. Create a list item in the above list with the following details:
+
+Title: AppId
+
+Value: Leave empty
+
 ## Step 2: Deploy Power Apps solution
 
 1. Navigate to **Power Apps**.
 2. Click on the **Solutions** tab.
 3. Click on **Import**.
-4. Upload the solution zip file and click **Next**.
+4. Upload the unmanaged solution zip file (**PromptPulse_1_0_0_0.zip**) and click **Next**.
 5. Click **Sign in** next to each of the connectors and wait for the green tick.
 6. On the **Environment Variables** pane, select the SharePoint site you created and the two lists.
 7. Click **Import**.
 8. A message should be displayed to say the solution has been imported successfully.
+9. Obtain the **'ID'** for the Power App by clicking the elipsis next to the app.
+10. Copy the **App ID** value and paste this into the **Value** column of the list item you created in the **Configuration** list.
 
 ## Step 3: Share the app/flows
 
