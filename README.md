@@ -17,6 +17,8 @@ Utilizing Power Automate, these prompts are automatically distributed to Teams c
  
 Deployment is straightforward and quick, not necessitating any premium connectors nor relying on Dataverse. 
 
+Prompt Pulse is mobile friendly 📱and supports dark mode.
+
 For more information check out the [Overview](Documentation/Overview.md)
 
 ## Capabilities
