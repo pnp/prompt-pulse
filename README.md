@@ -52,7 +52,8 @@ If you want to get involved with helping us enhance Prompt Pulse, whether that i
 
 Special thanks to those below who have helped build this awesome solution.
 
-- Jo Johnstone (Microsoft)
+- [@alexc-MSFT](https://github.com/alexc-MSFT)
+- [@JoJohnstone](https://github.com/JoJohnstone)
 
 ## Support
 
