@@ -21,13 +21,13 @@ Prompt Pulse is mobile friendly 📱and supports dark mode.
 
 For more information check out the [Overview](Documentation/Overview.md)
 
-<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-landing-screenshot.png?raw=true" height="500" alt="Prompt Pulse Landing Screenshot"><br/>
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-landing-screenshot.png?raw=true" alt="Prompt Pulse Landing Screenshot"><br/>
 
 <img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-adaptivecard.png?raw=true" height="250" alt="Prompt Pulse Adaptive Card Screenshot"><br/>
 
 <img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-mobile-screenshot.png?raw=true" height="500" alt="Prompt Pulse Mobile Screenshot"><br/>
 
-<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-all-screenshot.png?raw=true" height="500" alt="Prompt Pulse All Screenshot"><br/>
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-all-screenshot.png?raw=true" alt="Prompt Pulse All Screenshot"><br/>
 
 
 ## Capabilities
