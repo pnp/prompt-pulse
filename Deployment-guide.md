@@ -26,3 +26,9 @@ To begin, you will need:
 | TeamId    | Single line of text  |
 | ChannelId    | Single line of text  |
 | GroupChatId    | Single line of text  |
+| GroupId    | Single line of text  |
+| GroupChatId    | Single line of text  |
+| MessageId    | Single line of text  |
+| Scheduled    | Yes/No  | Default value = No |
+| ScheduledDateTime    | Date and time  | Include time |
+| Status    | Choice  | Not Sent, Send, Sent, Failed | Default value = Not Sent
