@@ -65,3 +65,7 @@ Add the app to Teams globally using policies in the Teams Admin Center OR sidelo
 If you wish to roll the app out via policies, please refer to our general documentation on docs.microsoft.com for how to upload to the Teams Admin Center and deploy globally.
 
 Prompt Pulse can be pre-installed for all users and optionally pinned to the rail if you wish. Or you can deploy the app and allow users to add it to their Teams as a tab.
+
+## Step 4: Configure SharePoint list permissions
+
+Before rolling out Prompt Pulse, it is neccessary to configure the permisions on the SharePoint lists to ensure users can only read/write/delete their own items.
