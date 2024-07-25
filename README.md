@@ -1,6 +1,6 @@
 # Prompt Pulse <img align="right" width="140" height="140" src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-logo.png"> 
 
-| [Overview](/Overview.md) | [Deployment guide](/Deployment-guide.md)
+| [Overview](/Documentation/Overview.md) | [Deployment guide](/Documentation/Deployment-guide.md)
 | ---- | ---- 
 
 Prompt Pulse is a Power App that enables users and administrators to efficiently schedule and manage the sharing of Copilot prompts across Microsoft Teams, group chats, and individual users within an organization.
@@ -11,11 +11,13 @@ Microsoft 365 Copilot introduces a novel approach to work, and success is achiev
  
 Team members can establish these new routines by actively exchanging and embracing fresh prompts in 'Prompt Pulse', which illustrates what’s possible and motivates them to refine their prompting techniques.
  
-Utilizing Power Automate, these prompts are automatically distributed to Teams chats/channels or Viva Engage based on scheduled timings for regular and reliable updates.
+Utilizing Power Automate, these prompts are automatically distributed to Teams chats/channels or Viva Engage communities based on scheduled timings for regular and reliable updates.
 
 'Prompt Pulse' features a user-friendly interface designed with Power Apps, enabling admins to set schedules, designate specific audiences, and track the distribution of prompts.
  
 Deployment is straightforward and quick, not necessitating any premium connectors nor relying on Dataverse. 
+
+For more information check out the [Overview](Documentation/Overview.md)
 
 
 ## Capabilities
@@ -31,7 +33,7 @@ Prompt Pulse provides the following capabilities:
 
 ## Getting Started
 
-To get started please follow the [Deployment guide](Deployment-guide.md). 
+To get started please follow the [Deployment guide](Documentation/Deployment-guide.md). 
 
 ## Issues
 
