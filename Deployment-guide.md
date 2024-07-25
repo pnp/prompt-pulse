@@ -25,7 +25,6 @@ To begin, you will need:
 | Users    | Person or Group (Allow multiple selections)  |
 | TeamId    | Single line of text  |
 | ChannelId    | Single line of text  |
-| GroupChatId    | Single line of text  |
 | GroupId    | Single line of text  |
 | GroupChatId    | Single line of text  |
 | MessageId    | Single line of text  |
