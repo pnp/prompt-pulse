@@ -1,4 +1,4 @@
-# Prompt Pulse <img align="right" width="140" height="140" src="Documentation/images/prompt-pulse-logo.png"> 
+# Prompt Pulse <img align="right" width="140" height="140" src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-logo.png"> 
 
 | [Overview](/Overview.md) | [Deployment guide](/Deployment-guide.md)
 | ---- | ---- 
