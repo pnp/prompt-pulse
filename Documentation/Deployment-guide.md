@@ -49,7 +49,18 @@ To begin, you will need:
 2. Click on the **Solutions** tab.
 3. Click on **Import**.
 4. Upload the solution zip file and click **Next**.
-5. 
+5. Click **Sign in** next to each of the connectors and wait for the green tick.
+6. On the **Environment Variables** pane, select the SharePoint site you created and the two lists.
+7. Click **Import**.
+8. A message should be displayed to say the solution has been imported successfully.
+
+## Step 3: Share the app/flows
+
+1. Locate the app under **Apps**.
+2. Share the app with all users who will use Prompt Pulse (you may want to add any administrators as co-owners so they can modify the app if you wish to).
+3. Test the app by 'Playing' it.
+
+You may also wish to share the 3 flows (**'Send Scheduled Prompt'**, **'Send Prompt'** and **'Like Prompt'**) with admins who may need to view the run history or edit them. You can find them under **Flows** in the **Power Apps** portal or in the **Power Automate** portal.
 
 ## Step 3: Add the app to Teams (Optional)
 
@@ -74,3 +85,5 @@ Before rolling out Prompt Pulse, it is neccessary to configure the permisions on
 2. Amend the permissions on the **Users** list (Advanced Settings) to **Read items that were created by the user** and **Create items and edit items that were created by the user**.
 3. Break permission inheritance on the **Prompts** and **Users** lists and add only users/groups that will use Prompt Pulse.
 4. Ensure that admins who may need to read, edit and delete all list items have **Full Control**/**Owner** permissions on the SharePoint site.
+
+### Deployment is now complete - enjoy using Prompt Pulse!
