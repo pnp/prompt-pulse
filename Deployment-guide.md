@@ -43,3 +43,8 @@ To begin, you will need:
 
 ## Step 2: Deploy Power Apps solution
 
+1. Navigate to **Power Apps**.
+2. Click on the **Solutions** tab.
+3. Click on **Import**.
+4. Upload the solution zip file and click **Next**.
+5. 
