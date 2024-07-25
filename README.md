@@ -21,6 +21,10 @@ Prompt Pulse is mobile friendly 📱and supports dark mode.
 
 For more information check out the [Overview](Documentation/Overview.md)
 
+![Prompt Pulse Landing Screenshot](/Documentation/Images/prompt-pulse-landing-screenshot.png)
+
+![Prompt Pulse Mobile Screenshot](/Documentation/Images/prompt-pulse-mobile-screenshot.png)
+
 ## Capabilities
 
 Prompt Pulse provides the following capabilities:
@@ -58,7 +62,6 @@ Special thanks to those below who have helped build this awesome solution.
 ## Support
 
 This solution is open-source and community provided with no active community providing support for it. This solution is maintained by both Microsoft employees and community contributors and is not a Microsoft provided solution so there is no SLA or direct support for this from Microsoft. Please report any issues by raising an [issue](https://github.com/pnp/prompt-pulse/issues/new/choose).
-
 
 ## Microsoft 365 & Power Platform Community
 

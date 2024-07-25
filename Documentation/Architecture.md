@@ -1,12 +1,4 @@
-# Overview
-
-Prompt Pulse consists of the following components:
-
-- Canvas based Power App.
-- 3 x Power Automate flows.
-- 3 x SharePoint lists for data storage
-
-Please read on below to understand what each of these does and tips on how to best use Prompt Pulse.
+# Architecture
 
 ## Power App
 
