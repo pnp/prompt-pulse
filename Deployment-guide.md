@@ -32,3 +32,11 @@ To begin, you will need:
 | Scheduled    | Yes/No  | Default value = No |
 | ScheduledDateTime    | Date and time  | Include time |
 | Status    | Choice  | Not Sent, Send, Sent, Failed | Default value = Not Sent
+
+4. Create a list named 'Users'.
+5. Create the following columns:
+
+| Column Name    | Type | Values |
+| -------- | ------- | ------- | 
+| User  | Person or Group    |
+| LikedPrompts | Lookup     | Source list = 'Prompts', Select a column = 'ID' |
