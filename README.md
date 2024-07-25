@@ -1,7 +1,7 @@
 # Prompt Pulse <img align="right" width="140" height="140" src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-logo.png"> 
 
-| [Overview](/Documentation/Overview.md) | [Deployment guide](/Documentation/Deployment-guide.md)
-| ---- | ---- 
+| [Overview](/Documentation/Overview.md) | [Deployment guide](/Documentation/Deployment-guide.md) | [Architecture](/Documentation/Architecture.md)
+| ---- | ---- | ----
 
 Prompt Pulse is a Power App that enables users and administrators to efficiently schedule and manage the sharing of Copilot prompts across Microsoft Teams, group chats, and individual users within an organization.
 
