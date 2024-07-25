@@ -19,7 +19,7 @@ Deployment is straightforward and quick, not necessitating any premium connector
 
 Prompt Pulse is mobile friendly 📱and supports dark mode.
 
-For more information check out the [Overview](Documentation/Overview.md)
+For more information check out the [Overview](Documentation/Overview.md).
 
 <img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-landing-screenshot.png?raw=true" alt="Prompt Pulse Landing Screenshot"><br/>
 
