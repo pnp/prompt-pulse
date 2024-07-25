@@ -12,7 +12,7 @@ For more details on what each of these does please check out the [Architecture](
 
 The Prompt Pulse Power App provides users with an easy to use interface to share prompts share prompts directly, schedule the sharing of prompts and view prompts (all/recent/liked).
 
-The app is fully responsive and works on mobile devices 📱 (please note that completion of the initial tutorial needs to be carried out on a desktop device).
+The app is fully responsive, works on mobile devices 📱 and supports dark mode! 🕶️ (please note that completion of the initial tutorial needs to be carried out on a desktop device).
 
 To get the most out of Prompt Pulse, we recommend using the app in Microsoft Teams either as a pinned app and/or add the app into individual teams as a tab. 
 
