@@ -40,3 +40,6 @@ To begin, you will need:
 | User  | Person or Group    |
 | LikedPrompts | Lookup     | Source list = 'Prompts', Select a column = 'ID' |
 | TutorialComplete | Yes/No     | Default value = No |
+
+## Step 2: Deploy Power Apps solution
+
