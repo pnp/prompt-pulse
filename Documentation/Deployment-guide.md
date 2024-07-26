@@ -13,6 +13,7 @@ To begin, you will need:
 - SharePoint site which will contain the lists - we recommend creating a new one for Prompt Pulse.
 - Full Control access to the above site. 
 - Regional settings set correctly on the SharePoint site for your timezone and locale (this is important for the scheduling to work correctly).
+- The [latest release](https://github.com/pnp/prompt-pulse/releases/latest) of Prompt Pulse.
 
 ## Step 1: Create SharePoint Lists
 
@@ -62,7 +63,7 @@ Value: Leave empty
 1. Navigate to **Power Apps**.
 2. Click on the **Solutions** tab.
 3. Click on **Import**.
-4. Upload the unmanaged solution zip file (**PromptPulse_1_0_0_0.zip**) and click **Next**.
+4. Upload the solution zip file and click **Next**.
 5. Click **Sign in** next to each of the connectors and wait for the green tick.
 6. On the **Environment Variables** pane, select the SharePoint site you created and the two lists.
 7. Click **Import**.
