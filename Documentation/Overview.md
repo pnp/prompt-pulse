@@ -6,7 +6,7 @@ Prompt Pulse consists of the following components:
 - 3 x Power Automate flows.
 - 3 x SharePoint lists for data storage
 
-For more details on what each of these does please check out the [Architecture](Documentation/Architecture.md) documentation.
+For more details on what each of these does please check out the [Architecture](Architecture.md) documentation.
 
 ## The App
 
