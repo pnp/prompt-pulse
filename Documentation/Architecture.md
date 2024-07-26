@@ -65,7 +65,7 @@ If this value does not exist, it is appended to an array and the value of the 'L
 
 ## Data Source
 
-As detailed in the [Overview](Documentation/Overview.md) documentation, there are 3 SharePoint lists used in prompt pulse. Please see the details of each list below and what each column is used for:
+As detailed in the [Overview](Overview.md) documentation, there are 3 SharePoint lists used in prompt pulse. Please see the details of each list below and what each column is used for:
 
 ### Prompts list
 
