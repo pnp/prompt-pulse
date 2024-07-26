@@ -47,7 +47,7 @@ You can then paste the prompt into Microsoft 365 Copilot.
 
 The **All Prompts** tab allows you to view all prompts that have been shared, text can also be copied by clicking the tile.
 
-The adaptive card also has a button which will take a user straight to the **All Prompts** screen.
+The adaptive card also has a button which will take a user straight to the **All Prompts** screen. Please note - this will open the app as a 'personal' app due to restrictions with deeplinking, if the user does not have the app installed they will be prompted to install it.
 
 ### Liking prompts
 
