@@ -90,7 +90,7 @@ Bear the above in mind when using Prompt Pulse, in a future iteration we will lo
 
 ## Power Automate Flows
 
-There are 3 flows that are part of the Prompt Pulse solution, these are listed below along with a brief description of what these do, for more details please view the [Architecture](Documentation/Architecture.md) documentation.
+There are 3 flows that are part of the Prompt Pulse solution, these are listed below along with a brief description of what these do, for more details please view the [Architecture](Architecture.md) documentation.
 
 - Send Prompt: This flow executes when a list item is created or modified in the 'Prompts' list and sends the prompt to the specified location using adaptive cards or in the case of Viva Engage, a message.
 - Send Scheduled Prompt: This flow runs on a recurrent schedule (5 minutes by default) and is responsible for checking for scheduled prompts in the list and sending these.
