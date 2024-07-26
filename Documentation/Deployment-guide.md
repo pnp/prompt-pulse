@@ -98,7 +98,7 @@ Prompt Pulse can be pre-installed for all users and optionally pinned to the rai
 
 Before rolling out Prompt Pulse, it is neccessary to configure the permisions on the SharePoint lists to ensure users can only read/write/delete their own items.
 
-1. Amend the permissions on the **Prompts** list (Advanced Settings) to **Read items that were created by the user** and **Create items and edit items that were created by the user**.
+1. Amend the permissions on the **Prompts** list (Advanced Settings) to **Create items and edit items that were created by the user**.
 2. Amend the permissions on the **Users** list (Advanced Settings) to **Read items that were created by the user** and **Create items and edit items that were created by the user**.
 3. Break permission inheritance on the **Prompts** and **Users** lists and add only users/groups that will use Prompt Pulse.
 4. Ensure that admins who may need to read, edit and delete all list items have **Full Control**/**Owner** permissions on the SharePoint site.
