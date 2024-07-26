@@ -39,6 +39,8 @@ From the main screen, the process for sharing a prompt is as follows:
 
 - Once sent, users will receive a notification in the format of an adaptive card in the chosen location.
 
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-share-screenshot.png?raw=true" alt="Prompt Pulse Share Screenshot"><br/>
+
 ### Viewing/using prompts
 
 From the main screen, users can view the latest 20 prompts. To use a prompt simply click the prompt **'tile'** and the prompt text will be copied to your clipboard. 
@@ -48,6 +50,8 @@ You can then paste the prompt into Microsoft 365 Copilot.
 The **All Prompts** tab allows you to view all prompts that have been shared, text can also be copied by clicking the tile.
 
 The adaptive card also has a button which will take a user straight to the **All Prompts** screen. Please note - this will open the app as a 'personal' app due to restrictions with deeplinking, if the user does not have the app installed they will be prompted to install it.
+
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-viewliking-screenshot.png?raw=true" alt="Prompt Pulse View/Like Screenshot"><br/>
 
 ### Liking prompts
 
@@ -64,6 +68,10 @@ From this screen, dates/times for scheduled prompts can be updated using the edi
 The **Send Now** option sends the prompt straight away and removes it from the scheduled list.
 
 **Note - this view shows the current users' scheduled prompts only.**
+
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-scheduled-screenshot.png?raw=true" alt="Prompt Pulse My Scheduled Prompts Screenshot"><br/>
+
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-scheduledialog-screenshot.png?raw=true" alt="Prompt Pulse Schedule Prompt Dialog Screenshot"><br/>
 
 ### Tips
 
