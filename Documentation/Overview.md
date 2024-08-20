@@ -25,13 +25,13 @@ When a user launches Prompt Pulse for the first time, they will be taken through
 From the main screen, the process for sharing a prompt is as follows:
 
 - Enter a **title** and the **prompt** in the boxes provided.
-- Choose a location to share the prompt to by using the radio buttons - 
+- Choose locations to share the prompt to by using the radio buttons - 
 
-    Viva Engage Community
+    Viva Engage Communities
 
-    Microsoft Teams Channel
+    Microsoft Teams Channels
 
-    Group Chat
+    Group Chats
 
     Individual Users
 

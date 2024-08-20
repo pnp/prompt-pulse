@@ -28,9 +28,9 @@ To begin, you will need:
 | ShareLocation | Choice     | Community, Team, Group Chat, Users |
 | Users    | Person or Group (Allow multiple selections)  |
 | TeamId    | Single line of text  |
-| ChannelId    | Single line of text  |
-| GroupId    | Single line of text  |
-| GroupChatId    | Single line of text  |
+| ChannelIds    | Multiple lines of text  |
+| GroupChatIds    | Multiple lines of text  |
+| CommunityIds    | Multiple lines of text  |
 | MessageId    | Single line of text  |
 | Scheduled    | Yes/No  | Default value = No |
 | ScheduledDateTime    | Date and time  | Include time |
