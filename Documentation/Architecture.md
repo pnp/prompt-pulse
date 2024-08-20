@@ -76,9 +76,9 @@ As detailed in the [Overview](Overview.md) documentation, there are 3 SharePoint
 | ShareLocation | Choice     | Location to share the prompt to.
 | Users    | Person or Group (Allow multiple selections)  | Users to share the prompt to.
 | TeamId    | Single line of text  | Id of the Team selected in the app to share the prompt to.
-| ChannelId    | Single line of text  | Id of the Channel selected in the app to share the prompt to.
-| GroupId    | Single line of text  | Id of the Group selected in the app (when sharing to Viva Engage).
-| GroupChatId    | Single line of text  | Id of the Group Chat selected in the app to share the prompt to.
+| ChannelIds    | Multiple lines of text  | Ids of the Channels selected in the app to share the prompt to.
+| GroupChatIds    | Multiple lines of text  | Ids of the Group Chats selected in the app to share the prompt to.
+| CommunityIds    | Multiple lines of text  | Ids of the Communities selected in the app (when sharing to Viva Engage).
 | MessageId    | Single line of text  | Unique id of the adaptive card message - used so we can refer back to it in Power Automate.
 | Scheduled    | Yes/No  | Whether or not the prompt has been scheduled.
 | ScheduledDateTime    | Date and time  | Date/Time to send the prompt.
