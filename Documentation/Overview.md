@@ -3,7 +3,7 @@
 Prompt Pulse consists of the following components:
 
 - Power App
-- 3 x Power Automate flows.
+- 5 x Power Automate flows.
 - 3 x SharePoint lists for data storage
 
 For more details on what each of these does please check out the [Architecture](Architecture.md) documentation.
@@ -38,6 +38,8 @@ From the main screen, the process for sharing a prompt is as follows:
 - Send or schedule the send by using the buttons. The **Send** button sends the prompt instantly via a Power Automate flow which is trigger when an item is added/modified in the Prompts list (based on a certain criteria). The **Schedule** option will open a dialog allowing you to specify a date and time on which to send the prompt.
 
 - Once sent, users will receive a notification in the format of an adaptive card in the chosen location.
+
+**Note - Only group chats with a name AND the Prompt Pulse service account/user added as a participant will display in the app. Users will need to add this user manually for the group chat to be visible in the app.**
 
 <img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-share-screenshot.png?raw=true" alt="Prompt Pulse Share Screenshot"><br/>
 
@@ -75,6 +77,7 @@ The **Send Now** option sends the prompt straight away and removes it from the s
 
 ### Tips
 
+- Use a dedicated service account/M365 user when deploying Prompt Pulse (adaptive cards will be sent from this account).
 - Deploy the app in the Teams admin center to allow users to install.
 - Add the app in Teams as a tab where appropriate.
 - Encourage users to install and pin the app in the rail.
@@ -84,17 +87,21 @@ The **Send Now** option sends the prompt straight away and removes it from the s
 
 - In it's current iteration, Prompt Pulse shows ALL prompts that have been shared irrespective of where the app is installed (personal app or in a teams tab) so bear this in mind when sharing prompts.
 - Sharing prompts in a personal install of Prompt Pulse will also show these prompts in Prompt Pulse when installed as a teams tab.
+- Only group chats that include the Prompt Pulse service account/user will appear in the app. Users will need to add this account into the group chat manually in order for it to display.
+- The Prompt Pulse service account/user will be automatically added to Teams and Engage Communities when a prompt to the location for the first time.
 
 Bear the above in mind when using Prompt Pulse, in a future iteration we will look to add support for sharing and viewing prompts in only the team the app is installed in. 
 
 
 ## Power Automate Flows
 
-There are 3 flows that are part of the Prompt Pulse solution, these are listed below along with a brief description of what these do, for more details please view the [Architecture](Architecture.md) documentation.
+There are 5 flows that are part of the Prompt Pulse solution, these are listed below along with a brief description of what these do, for more details please view the [Architecture](Architecture.md) documentation.
 
 - Send Prompt: This flow executes when a list item is created or modified in the 'Prompts' list and sends the prompt to the specified location using adaptive cards or in the case of Viva Engage, a message.
 - Send Scheduled Prompt: This flow runs on a recurrent schedule (5 minutes by default) and is responsible for checking for scheduled prompts in the list and sending these.
 - Like Prompt: This flow runs when a user clicks the **Like Prompt** button in the adaptive cards and adds the prompt to the users' liked prompts.
+- Get Group Chats: This flow is used in the Power App and retrieves a list of group chats that the current user is a member of where the Prompt Pulse account is a member of the chat.
+- Get Engage Communities: This flow is used in the Power App and returns a list of Viva Engage Communities that the current user is a member of.
 
 ## Data Storage
 
@@ -104,7 +111,7 @@ There are 3 SharePoint lists used in the solution:
 
 - Prompts: Stores the prompts shared/scheduled in the app.
 - Users: Stores the users who have opened/used Prompt Pulse and their liked prompts.
-- Configuration: Stores configuration settings for Prompt Pulse, at the time of writing it is only used to store the ID of the Power App (required for deep linking the adaptive cards in Teams).
+- Configuration: Stores configuration settings for Prompt Pulse.
 
 These lists can be easily extended or changed should you wish to modify/customize Prompt Pulse. You can of course edit and delete prompts directly from the list if required. Avoid modifying the values of the GroupId, GroupChatId, TeamId, ChannelId and MessageId columns as these are used heavily in the Power Automate flows.
 

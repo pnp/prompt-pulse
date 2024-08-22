@@ -10,16 +10,27 @@ The following connectors are used in the Prompt Pulse solution:
 - Office 365 Users
 - SharePoint
 - Microsoft Teams
+- Office 365 Groups
 
 When executed from the Power App (to retrieve Groups, Teams and Viva Engage communities) they will be executed in the context of the current user so they should only see ones they have access to. They will also only see group chats they are part of.
 
+It's worth noting that Group Chats and Viva Engage Communities are pulled into the app via two flows.
+
 The above connectors are also used in the Power Automate flows.
+
+## Service Account
+
+**It is highly recommended to deploy Prompt Pulse using a dedicated service account/M365 user** and share the app across the organization/with the required users. The UPN for this service account is stored in the configuration list.
+
+Adaptive cards and Viva Engage notifications are sent using the account that deploys the Prompt Pulse Power Platform solution and configures the connections. Therefore by using a service account you can control the name of the user the notifications come from.
+
+In addition, in order to post the cards/notifications, the user account sending them needs to be member of the Team, Group Chat, Viva Engage community, this is handled automatically (with the exception of Group Chats) through the app. **Bear this in mind because not using a service account would result in the user who deployed the solution being added to these locations**.
 
 ## Power App
 
 The Prompt Pulse Power App is a canvas app using mostly **modern** controls where possible. Prompts that are shared/scheduled are stored in the **Prompts** SharePoint list.
 
-The app uses the above connectors to interact with the SharePoint site/lists and retrieve the locations in which to share the prompts.
+The app uses the above connectors (and flows listed below) to interact with the SharePoint site/lists and retrieve the locations in which to share the prompts. 
 
 The app can be customized if you wish, though it's worth noting that customizations will be lost if you attempt to update the solution in the future when new releases are available.
 
@@ -62,6 +73,30 @@ The user responding to the adaptive card is retrieved from the 'Users' list and 
 The flow then increments the value of the 'Likes' column by 1 and adds the prompt to an array. The value of the 'LikedPrompts' column in the Users list is checked to see whether it already contains the current prompt id. 
 
 If this value does not exist, it is appended to an array and the value of the 'LikedPrompts' column in the Users list is updated.
+
+## Get Group Chats
+
+This flow is triggered in the Power App when it is opened. It uses the Microsoft Teams connector to perform the following high-level steps:
+
+- Get group chats the user is part of.
+- Loop through group chats.
+- List members.
+- Check to see if the Prompt Pulse service account is a member of the chat AND that the chat has a name.
+- Return only the chats that contain the service account.
+
+This flow is required because prompt adaptive cards will not send if the service account is not a member of the chat. At the time of writing there is no workaround for this other than for the user to add the service account to the chat manually.
+
+## Get Engage Communities
+
+This flow is triggered in the Power App when it is opened. It uses the Viva Engage and Office 365 Groups connectors to perform the following high-level steps:
+
+- Get communities the user is a member of.
+- Loop through communities.
+- Get the M365 group for the community by filtering on the display name (may retrieve multiple groups).
+- Loop through the returned groups checking for ones where 'creationOptions' contains 'YammerProvisioning' (Viva Engage backed group).
+- Return the communities along with the groupids.
+
+This flow is required because the native Viva Engage connector does not return the M365 group id for the community. The group id is needed to add the service account to the group through the app when sending a prompt.
 
 ## Data Source
 
