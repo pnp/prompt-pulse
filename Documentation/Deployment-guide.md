@@ -8,8 +8,8 @@ To begin, you will need:
 
 - Power Apps and Power Automate (seeded licenses) enabled and rolled out across your organisation.
 - Power Apps environment with a Dataverse database deployed (only required due to the solution using Environment Variables). You may use the default environment, however a production environment is recommended. If you do not have capacity to create a Dataverse database, you may need to use the default environment. 
-- Service account (optional) to deploy the Power App and Flows, if you do not wish to create a service account then an ordinary user with Environment Maker permissions is adequate.
-- Access to the Power Apps environment you wish to deploy to (Environment Maker) access.
+- Service account (**highly recommended**) to deploy the Power App and Flows. This should be a normal M365 user with a license that includes Power Apps, SharePoint, Viva Engage, Power Automate and Outlook. The account can have MFA enabled and you may choose the display name to suit your organization.
+- Access for the service account to the Power Apps environment you wish to deploy to (Environment Maker) access.
 - SharePoint site which will contain the lists - we recommend creating a new one for Prompt Pulse.
 - Full Control access to the above site. 
 - Regional settings set correctly on the SharePoint site for your timezone and locale (this is important for the scheduling to work correctly).
@@ -58,9 +58,15 @@ Title: AppId
 
 Value: Leave empty
 
+9. Create a second list item in the above list with the following details:
+
+Title: ServiceAccountUPN
+
+Value: UPN (Email) of your service account
+
 ## Step 2: Deploy Power Apps solution
 
-1. Navigate to **Power Apps**.
+1. Navigate to **Power Apps** as the service account.
 2. Click on the **Solutions** tab.
 3. Click on **Import**.
 4. Upload the solution zip file and click **Next**.
@@ -77,7 +83,7 @@ Value: Leave empty
 2. Share the app with all users who will use Prompt Pulse (you may want to add any administrators as co-owners so they can modify the app if you wish to).
 3. Test the app by 'Playing' it.
 
-You may also wish to share the 3 flows (**'Send Scheduled Prompt'**, **'Send Prompt'** and **'Like Prompt'**) with admins who may need to view the run history or edit them. You can find them under **Flows** in the **Power Apps** portal or in the **Power Automate** portal.
+You may also wish to share the 5 flows (**'Send Scheduled Prompt'**, **'Send Prompt'**, **'Like Prompt'**, **'Get Group Chats'** and **'Get Engage Communities'**) with admins who may need to view the run history or edit them. You can find them under **Flows** in the **Power Apps** portal or in the **Power Automate** portal.
 
 ## Step 3: Add the app to Teams (Optional)
 
