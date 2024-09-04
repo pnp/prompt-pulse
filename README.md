@@ -14,6 +14,8 @@ Team members can establish these new routines by actively exchanging and embraci
 Utilizing Power Automate, these prompts are automatically distributed to Teams chats/channels or Viva Engage communities based on scheduled timings for regular and reliable updates.
 
 'Prompt Pulse' features a user-friendly interface designed with Power Apps, enabling admins to set schedules, designate specific audiences, and track the distribution of prompts.
+
+Additionally, Prompt Pulse is supplied with pre built prompts [Prompts.csv](Prompts.csv) that you can import straight away.
  
 Deployment is straightforward and quick, not necessitating any premium connectors nor relying on Dataverse. 
 
@@ -38,6 +40,7 @@ Prompt Pulse provides the following capabilities:
 - Adaptive card notifications for shared prompts.
 - A library of prompts which are added to when prompts are shared.
 - Ability to schedule prompts in advance to automatically send at a specific date/time.
+- Bulk import prompts from a csv file.
 - Users can like prompts to curate their own personal collection of prompts they find useful.
 - Fully mobile responsive Power App so users can share and view prompts on the move.
 

@@ -98,6 +98,10 @@ This flow is triggered in the Power App when it is opened. It uses the Viva Enga
 
 This flow is required because the native Viva Engage connector does not return the M365 group id for the community. The group id is needed to add the service account to the group through the app when sending a prompt.
 
+## Parse Prompt CSV
+
+This flow is triggered from the Power App when the user clicks the **Upload** button. It parses the content of the csv file and returns it as JSON.
+
 ## Data Source
 
 As detailed in the [Overview](Overview.md) documentation, there are 3 SharePoint lists used in prompt pulse. Please see the details of each list below and what each column is used for:
