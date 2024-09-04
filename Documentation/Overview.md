@@ -80,7 +80,7 @@ The **Send Now** option sends the prompt straight away and removes it from the s
 
 Prompts can be imported into Prompt Pulse in bulk, enabling you to easily schedule and send prompts right away, encouraging the use of Copilot from the get go.
 
-A csv file has been provided [Prompts.csv](../Prompts.csv) with pre built prompts for you to import. Feel free to edit the csv and add/remove as many prompts as you like (you will also be able to remove when importing). The pre built csv will be update periodically with new prompts so please keep an eye out for changes.
+A csv file has been provided [Prompts.csv](../Prompts.csv) with pre-built prompts for you to import. Feel free to edit the csv and add/remove as many prompts as you like (you will also be able to remove when importing). The pre built csv will be update periodically with new prompts so please keep an eye out for changes.
 
 To import prompts, follow the steps below:
 
