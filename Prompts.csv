@@ -1,0 +1,24 @@
+﻿PromptTitle,Prompt
+Superhero,"Using the information, you have about me, my writing and my work, create a Superhero with the superpowers you think I possess. Help me define my personal brand. Reference my work, emails, chats, etc. to help shape a personal brand fitting to me. This personal brand should be in the form of an elevator pitch about what I do and reflect my characteristics."
+7 day summary,"Summarise the last 7 days into bullet points of actions where I have been mentioned. Refer to any emails, chats and meeting transcripts that I missed due to being on holiday. List the urgent actions first and who asked the question."
+Summarise my emails,"From my emails over the past week, create a table of actions, including whose action it is, the person that assigned it and when it is due. I need this to have a good structure to organize my day. Be concise.​"
+Meeting minutes,Using the format in /template.doc and the transcript in /meeting put together meeting minutes from this meeting
+Meeting prep,"Help me prepare for today's meetings with the title, participants, and times. "
+Email response,Identify and list all the emails and chats where I have not responded or received a response.
+Personal brand,Look at the emails and Teams meetings that I have sent in the last 6 months. Use these messages to distil a personal brand voice document that I can use to inform copilot of my personal voice and style. 
+Review my calendar,"Review my calendar for today and provide a table of all meetings, including descriptions, agendas, and participants, organized hour by hour. Include a buffer time for preparation before each meeting."
+Eisenhower matrix,"Based on my emails and Teams chat channels of the last 36 hours, organise my tasks along the Eisenhower matrix for the coming 15 days."
+Explain a topic,Explain [topic] in simple terms. Explain to me as if I’m a beginner. 
+Set me up for the day,"Scan my meetings, emails and chats to let me know what meetings I have and who with and what preparation I have to do. Let me know what I missed in the last 24 hours. What other tasks do I have to work on? Produce a structured list which lets me prioritise what I have to work on today. Include some concise context for each."
+Prepare for Monday,"List my meetings, tasks and activities on my calendar that I am participating in on this coming Monday in a table. In a second column, recommend any specific actions I should take to prepare for those meetings and activities; dig into the meeting details, and where the meeting includes attached documents or links, list their names and provide their links in a third column."
+Kickstart the week,"You are my AI assistant, optimized for my daily routine. Please assist me in starting my day effectively. List action items in a dedicated table. Please have the columns in the following order. Topic, Follow ups and action items."
+Analyze emails from my leaders,"I'd like for you to act as my executive assistant. Can you analyze my inbox and find any emails from my manager, or their manager, that require my response or contain any action items."
+List technical interviews,"List all the candidates for which I took the interview in a tabular format with date of interview, candidate name and position. kindly refer to the last 6 months emails from Outlook to get the candidate's name."
+Locate my meeting mentions,Find conversations where my name was mentioned yesterday where I have not since replied.
+Meeting minutes,"What was this meeting about? What are the goals and topics from the meeting? Format each section with a bolded heading, a bulleted list, and bolded names.What were the key points discussed?Summarize the key discussion points and any action items. Recap and categorize all tips that were considered. Format into a table."""
+Start the Day,"Help me start my day: Act as if you are my personal admin. I'd like for you to create a list showing anywhere I was mentioned but have not yet responded organized by email, Teams chat, and Teams channels in the last 24 hours including a short summary of each. Next, using that information generate a list that prioritizes my top 3 action items for today."
+Wrap Up the Day,"Help me wrap up my day: Act as if you are my personal admin. I'd like for you to create a list showing anywhere I was mentioned but have not yet responded organized by email, Teams chat, and Temas channels in the last 10 hours including a short summary of each. Next, using that information generate a list that prioritizes my top 3 action items for today."
+Explain,Summarize the article in a Non Academic and Non Technical Style.
+OneNote structure,"Please add structure to these notes, make all names bold and add a table of actions at the end,"
+Rewrite,Rewrite this for clarity and brevity.
+List to Table for Dyslexia,Put this in a table for me.

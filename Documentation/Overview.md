@@ -3,7 +3,7 @@
 Prompt Pulse consists of the following components:
 
 - Power App
-- 5 x Power Automate flows.
+- 6 x Power Automate flows.
 - 3 x SharePoint lists for data storage
 
 For more details on what each of these does please check out the [Architecture](Architecture.md) documentation.
@@ -75,6 +75,26 @@ The **Send Now** option sends the prompt straight away and removes it from the s
 
 <img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-scheduledialog-screenshot.png?raw=true" alt="Prompt Pulse Schedule Prompt Dialog Screenshot"><br/>
 
+
+### Importing
+
+Prompts can be imported into Prompt Pulse in bulk, enabling you to easily schedule and send prompts right away, encouraging the use of Copilot from the get go.
+
+A csv file has been provided [Prompts.csv](.\prompts.csv) with pre built prompts for you to import. Feel free to edit the csv and add/remove as many prompts as you like (you will also be able to remove when importing). The pre built csv will be update periodically with new prompts so please keep an eye out for changes.
+
+To import prompts, follow the steps below:
+
+1. Navigate to the import screen by clicking the **Import Prompts** tab.
+2. Use the attachment control to upload the csv file (only csv files are supported AND the csv file must be in the same format as the provided sample).
+3. Click **Upload**.
+4. The table will update to show all the prompts from the csv.
+5. For each row/prompt, choose whether to schedule or send the prompt (**send** will send the prompt straight away when imported). Also choose the locations to share the prompt to.
+6. Once ready, click **Import**, this will import the prompts into the SharePoint list and send/schedule them as per your selections.
+
+**To delete prompts that you do not wish to import, use the trash icon.**
+
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-import-screenshot.png?raw=true" alt="Prompt Pulse Import Prompts Screenshot"><br/>
+
 ### Tips
 
 - Use a dedicated service account/M365 user when deploying Prompt Pulse (adaptive cards will be sent from this account).
@@ -95,13 +115,14 @@ Bear the above in mind when using Prompt Pulse, in a future iteration we will lo
 
 ## Power Automate Flows
 
-There are 5 flows that are part of the Prompt Pulse solution, these are listed below along with a brief description of what these do, for more details please view the [Architecture](Architecture.md) documentation.
+There are 6 flows that are part of the Prompt Pulse solution, these are listed below along with a brief description of what these do, for more details please view the [Architecture](Architecture.md) documentation.
 
 - Send Prompt: This flow executes when a list item is created or modified in the 'Prompts' list and sends the prompt to the specified location using adaptive cards or in the case of Viva Engage, a message.
 - Send Scheduled Prompt: This flow runs on a recurrent schedule (5 minutes by default) and is responsible for checking for scheduled prompts in the list and sending these.
 - Like Prompt: This flow runs when a user clicks the **Like Prompt** button in the adaptive cards and adds the prompt to the users' liked prompts.
 - Get Group Chats: This flow is used in the Power App and retrieves a list of group chats that the current user is a member of where the Prompt Pulse account is a member of the chat.
 - Get Engage Communities: This flow is used in the Power App and returns a list of Viva Engage Communities that the current user is a member of.
+- Parse Prompt CSV: This flow is used in the Power App and parses the content of the uploaded csv file and returns it in JSON format.
 
 ## Data Storage
 
