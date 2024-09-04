@@ -15,7 +15,7 @@ Utilizing Power Automate, these prompts are automatically distributed to Teams c
 
 'Prompt Pulse' features a user-friendly interface designed with Power Apps, enabling admins to set schedules, designate specific audiences, and track the distribution of prompts.
 
-Additionally, Prompt Pulse is supplied with pre built prompts [Prompts.csv](Prompts.csv) that you can import straight away.
+Additionally, Prompt Pulse is supplied with pre-built prompts [Prompts.csv](Prompts.csv) that you can import straight away.
  
 Deployment is straightforward and quick, not necessitating any premium connectors nor relying on Dataverse. 
 
