@@ -22,4 +22,4 @@ Explain,Summarize the article in a Non Academic and Non Technical Style.
 OneNote structure,"Please add structure to these notes, make all names bold and add a table of actions at the end,"
 Rewrite,Rewrite this for clarity and brevity.
 List to Table for Dyslexia,Put this in a table for me.
-Rewrite for patient letter, Rewrite all of these clinician notes in [file] into terms understood at a 9-year-old reading level, replacing any medical jargon. The numbers starting most of the paragraphs (for example, 16/6) are dates. Wherever a term or concept in the notes matches a topic in [file] append the corresponding reference text in the document to a 'References' section of the new document.
+Rewrite for patient letter, "Rewrite all of these clinician notes in [file] into terms understood at a 9-year-old reading level, replacing any medical jargon. The numbers starting most of the paragraphs (for example, 16/6) are dates. Wherever a term or concept in the notes matches a topic in [file] append the corresponding reference text in the document to a 'References' section of the new document."
