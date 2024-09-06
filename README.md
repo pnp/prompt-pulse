@@ -66,6 +66,7 @@ Special thanks to those below who have helped build this awesome solution.
 
 - [@alexc-MSFT](https://github.com/alexc-MSFT)
 - [@JoJohnstone](https://github.com/JoJohnstone)
+- [@chslemp](https://github.com/chslemp)
 
 ## Support
 
