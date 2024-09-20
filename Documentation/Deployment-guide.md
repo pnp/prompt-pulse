@@ -2,6 +2,10 @@
 
 Please note - this deployment guide assumes a proficient level of knowledge in deploying Power Apps solutions and managing SharePoint list permissions.
 
+## Video Walkthrough 
+
+https://github.com/user-attachments/assets/b334e743-8c7b-4371-b5fd-4cf1f6e739dd
+
 ## Prerequisites
 
 To begin, you will need:
