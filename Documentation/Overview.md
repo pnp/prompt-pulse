@@ -117,7 +117,7 @@ To import prompts from Prompt Buddy, follow the steps below:
 6. For each row/prompt, choose whether to schedule or send the prompt (**send** will send the prompt straight away when imported). Also choose the locations to share the prompt to.
 7. Once ready, click **Import**, this will import the prompts and send/schedule them as per your selections.
 
-<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-import-buddy-screenshot?raw=true" alt="Prompt Pulse Import Prompt Buddy Prompts Screenshot"><br/>
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-import-buddy-screenshot.png?raw=true" alt="Prompt Pulse Import Prompt Buddy Prompts Screenshot"><br/>
 
 ### Tips
 
