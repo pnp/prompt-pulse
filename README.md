@@ -19,7 +19,7 @@ Additionally, Prompt Pulse is supplied with pre-built prompts [Prompts.csv](Prom
  
 Deployment is straightforward and quick, not necessitating any premium connectors nor relying on Dataverse. 
 
-Prompt Pulse integrates with Prompt Buddy, is mobile friendly 📱and supports dark mode.
+Prompt Pulse integrates with [Prompt Buddy](https://github.com/stuartridout/promptbuddy), is mobile friendly 📱and supports dark mode.
 
 For more information check out the [Overview](Documentation/Overview.md).
 
