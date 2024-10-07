@@ -19,7 +19,7 @@ Additionally, Prompt Pulse is supplied with pre-built prompts [Prompts.csv](Prom
  
 Deployment is straightforward and quick, not necessitating any premium connectors nor relying on Dataverse. 
 
-Prompt Pulse is mobile friendly 📱and supports dark mode.
+Prompt Pulse integrates with Prompt Buddy, is mobile friendly 📱and supports dark mode.
 
 For more information check out the [Overview](Documentation/Overview.md).
 
@@ -42,7 +42,22 @@ Prompt Pulse provides the following capabilities:
 - Ability to schedule prompts in advance to automatically send at a specific date/time.
 - Bulk import prompts from a csv file.
 - Users can like prompts to curate their own personal collection of prompts they find useful.
+- Integration with Prompt Buddy allowing prompts in Buddy to be shared through Pulse and visa versa.
 - Fully mobile responsive Power App so users can share and view prompts on the move.
+
+## Prompt Buddy Integration
+
+Prompt Pulse now integrates with Prompt Buddy, providing the following functionality:
+
+- Import Prompt Buddy prompts into Prompt Pulse.
+- Schedule prompts from Buddy in Prompt Pulse.
+- Sync Prompt Pulse prompts back to Prompt Buddy.
+
+**Note - At the time of writing only Microsoft 365 Copilot promps are synced from Prompt Buddy to Prompt Pulse.**
+
+Prompt Buddy is not required to use Prompt Pulse.
+
+The [Overview](Documentation/Overview.md) documentation explains how to import and schedule prompts from Prompt Buddy.
 
 ## Getting Started
 

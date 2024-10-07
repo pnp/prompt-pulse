@@ -2,6 +2,8 @@
 
 The below documentation details the architecture of the Prompt Pulse solution. Prompt Pulse is provided as a Power Apps solution file (**unmanaged**), this allows easy updates when new versions are released.
 
+The Prompt Buddy integration is provided as a Dataverse for Teams solution file (**unmanaged**) and is deployed separately from the Prompt Pulse solution.
+
 ## Connectors
 
 The following connectors are used in the Prompt Pulse solution:
@@ -18,6 +20,11 @@ It's worth noting that Group Chats and Viva Engage Communities are pulled into t
 
 The above connectors are also used in the Power Automate flows.
 
+The following connectors are used in the Prompt Buddy Integration solution:
+
+- Dataverse
+- SharePoint
+
 ## Service Account
 
 **It is highly recommended to deploy Prompt Pulse using a dedicated service account/M365 user** and share the app across the organization/with the required users. The UPN for this service account is stored in the configuration list.
@@ -26,6 +33,8 @@ Adaptive cards and Viva Engage notifications are sent using the account that dep
 
 In addition, in order to post the cards/notifications, the user account sending them needs to be member of the Team, Group Chat, Viva Engage community, this is handled automatically (with the exception of Group Chats) through the app. **Bear this in mind because not using a service account would result in the user who deployed the solution being added to these locations**.
 
+This service account can also be used to deploy the Prompt Buddy integration.
+
 ## Power App
 
 The Prompt Pulse Power App is a canvas app using mostly **modern** controls where possible. Prompts that are shared/scheduled are stored in the **Prompts** SharePoint list.
@@ -33,6 +42,10 @@ The Prompt Pulse Power App is a canvas app using mostly **modern** controls wher
 The app uses the above connectors (and flows listed below) to interact with the SharePoint site/lists and retrieve the locations in which to share the prompts. 
 
 The app can be customized if you wish, though it's worth noting that customizations will be lost if you attempt to update the solution in the future when new releases are available.
+
+## Prompt Buddy Integration
+
+Integration with Prompt Buddy is provided through a single flow (details can be found below) which adds Prompt Buddy prompts to the **Prompts** list and Prompt Pulse prompts to the relevant dataverse tables used by Prompt Buddy. This keeps both solutions in sync and ensures prompts can be accessed from both apps.
 
 # Flows
 
@@ -102,6 +115,14 @@ This flow is required because the native Viva Engage connector does not return t
 
 This flow is triggered from the Power App when the user clicks the **Upload** button. It parses the content of the csv file and returns it as JSON.
 
+## Prompt Pulse Sync
+
+This flow is triggered on a recurrent scheduled inside the Dataverse for Teams environment in which the Prompt Buddy app resides. It performs the following high-level steps:
+
+- Get Prompt Buddy Microsoft 365 Copilot prompts.
+- Loop through prompts and create a list item in the Prompts list, set the value of the 'SyncedToPulse' column to true and set the 'BuddyId' column to the unique id of the dataverse record.
+- Loop through prompts in the Prompts list and create the relevant records in the Prompt Buddy dataverse tables, set the 'SyncedToBuddy' column to true.
+
 ## Data Source
 
 As detailed in the [Overview](Overview.md) documentation, there are 3 SharePoint lists used in prompt pulse. Please see the details of each list below and what each column is used for:
@@ -122,6 +143,10 @@ As detailed in the [Overview](Overview.md) documentation, there are 3 SharePoint
 | Scheduled    | Yes/No  | Whether or not the prompt has been scheduled.
 | ScheduledDateTime    | Date and time  | Date/Time to send the prompt.
 | Status    | Choice  | Status of the prompt.
+| SyncedToBuddy    | Yes/No  | Whether or not the prompt has been synced to Prompt Buddy (only used if the Prompt Buddy integration is deployed).
+| SyncedToPulse    | Yes/No  | Where or not the prompt has been synced from Prompt Buddy to Pulse (only used if the Prompt Buddy integration is deployed).
+| BuddyId    | Single line of text  | Unique id of the prompt in the Prompt Buddy dataverse prompts table.
+
 
 ### Users list
 

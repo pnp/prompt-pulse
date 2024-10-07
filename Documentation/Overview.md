@@ -6,6 +6,8 @@ Prompt Pulse consists of the following components:
 - 6 x Power Automate flows.
 - 3 x SharePoint lists for data storage
 
+Separate Dataverse for Teams solution for integration with Prompt Buddy containing 1 Power Automate flow.
+
 For more details on what each of these does please check out the [Architecture](Architecture.md) documentation.
 
 ## The App
@@ -15,6 +17,8 @@ The Prompt Pulse Power App provides users with an easy to use interface to share
 The app is fully responsive, works on mobile devices 📱 and supports dark mode! 🕶️ (please note that completion of the initial tutorial needs to be carried out on a desktop device).
 
 To get the most out of Prompt Pulse, we recommend using the app in Microsoft Teams either as a pinned app and/or add the app into individual teams as a tab. 
+
+Prompt Pulse integrates with Prompt Buddy, follow the [Deployment guide](Deployment-guide.md) to deploy the integration.
 
 When a user launches Prompt Pulse for the first time, they will be taken through a tutorial explaining how to use the app. 
 
@@ -49,7 +53,7 @@ From the main screen, users can view the latest 20 prompts. To use a prompt simp
 
 You can then paste the prompt into Microsoft 365 Copilot. 
 
-The **All Prompts** tab allows you to view all prompts that have been shared, text can also be copied by clicking the tile.
+The **All Prompts** tab allows you to view all prompts that have been shared, text can also be copied by clicking the tile. If the integration with Prompt Buddy is deployed, an icon will be visible showing the 'source' of the prompt (Pulse or Buddy).
 
 The adaptive card also has a button which will take a user straight to the **All Prompts** screen. Please note - this will open the app as a 'personal' app due to restrictions with deeplinking, if the user does not have the app installed they will be prompted to install it.
 
@@ -80,20 +84,38 @@ The **Send Now** option sends the prompt straight away and removes it from the s
 
 Prompts can be imported into Prompt Pulse in bulk, enabling you to easily schedule and send prompts right away, encouraging the use of Copilot from the get go.
 
+Prompts can be imported from CSV or Prompt Buddy.
+
 A csv file has been provided [Prompts.csv](../Prompts.csv) with pre-built prompts for you to import. Feel free to edit the csv and add/remove as many prompts as you like (you will also be able to remove when importing). The pre built csv will be update periodically with new prompts so please keep an eye out for changes.
 
-To import prompts, follow the steps below:
+#### Import from CSV
+
+To import prompts from CSV, follow the steps below:
 
 1. Navigate to the import screen by clicking the **Import Prompts** tab.
-2. Use the attachment control to upload the csv file (only csv files are supported AND the csv file must be in the same format as the provided sample).
-3. Click **Upload**.
-4. The table will update to show all the prompts from the csv.
-5. For each row/prompt, choose whether to schedule or send the prompt (**send** will send the prompt straight away when imported). Also choose the locations to share the prompt to.
-6. Once ready, click **Import**, this will import the prompts into the SharePoint list and send/schedule them as per your selections.
+2. Click the **CSV file** button.
+3. Use the attachment control to upload the csv file (only csv files are supported AND the csv file must be in the same format as the provided sample).
+4. Click **Upload**.
+5. The table will update to show all the prompts from the csv.
+6. For each row/prompt, choose whether to schedule or send the prompt (**send** will send the prompt straight away when imported). Also choose the locations to share the prompt to.
+7. Once ready, click **Import**, this will import the prompts into the SharePoint list and send/schedule them as per your selections.
 
 **To delete prompts that you do not wish to import, use the trash icon.**
 
 <img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-import-screenshot.png?raw=true" alt="Prompt Pulse Import Prompts Screenshot"><br/>
+
+#### Import from Prompt Buddy
+
+To import prompts from Prompt Buddy, follow the steps below:
+
+1. Navigate to the import screen by clicking the **Import Prompts** tab.
+2. Click the **Prompt Buddy** button.
+3. Use the table at the top to add prompts to import by clicking the **+** icon. This table shows Prompt Buddy prompts that have not yet been imported into Prompt Pulse.
+4. Prompts added will appear in the **Selected Prompts** table.
+6. For each row/prompt, choose whether to schedule or send the prompt (**send** will send the prompt straight away when imported). Also choose the locations to share the prompt to.
+7. Once ready, click **Import**, this will import the prompts and send/schedule them as per your selections.
+
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-import-buddy-screenshot?raw=true" alt="Prompt Pulse Import Prompt Buddy Prompts Screenshot"><br/>
 
 ### Tips
 
@@ -117,12 +139,15 @@ Bear the above in mind when using Prompt Pulse, in a future iteration we will lo
 
 There are 6 flows that are part of the Prompt Pulse solution, these are listed below along with a brief description of what these do, for more details please view the [Architecture](Architecture.md) documentation.
 
+As mentioned earlier there is an additional flow for the Prompt Buddy integration.
+
 - Send Prompt: This flow executes when a list item is created or modified in the 'Prompts' list and sends the prompt to the specified location using adaptive cards or in the case of Viva Engage, a message.
 - Send Scheduled Prompt: This flow runs on a recurrent schedule (5 minutes by default) and is responsible for checking for scheduled prompts in the list and sending these.
 - Like Prompt: This flow runs when a user clicks the **Like Prompt** button in the adaptive cards and adds the prompt to the users' liked prompts.
 - Get Group Chats: This flow is used in the Power App and retrieves a list of group chats that the current user is a member of where the Prompt Pulse account is a member of the chat.
 - Get Engage Communities: This flow is used in the Power App and returns a list of Viva Engage Communities that the current user is a member of.
 - Parse Prompt CSV: This flow is used in the Power App and parses the content of the uploaded csv file and returns it in JSON format.
+- Prompt Pulse Sync: This flow is used when Prompt Buddy is deployed, it syncronizes prompts from Prompt Buddy to Prompt Pulse and visa versa.
 
 ## Data Storage
 
