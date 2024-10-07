@@ -19,6 +19,14 @@ To begin, you will need:
 - Regional settings set correctly on the SharePoint site for your timezone and locale (this is important for the scheduling to work correctly).
 - The [latest release](https://github.com/pnp/prompt-pulse/releases/latest) of Prompt Pulse.
 
+### Prompt Buddy Integration
+
+If you wish to integrate with Prompt Buddy, it must be deployed and set up in a Teams Team before deploying Prompt Pulse.
+
+Once Prompt Pulse is deployed, follow 'Step 5' below to deploy the Prompt Buddy integration, this requires deployment of an additional Power Apps solution.
+
+Note - You must create ALL of the columns below even if you are not deploying the integration.
+
 ## Step 1: Create SharePoint Lists
 
   1. Navigate to the SharePoint site.
@@ -39,6 +47,10 @@ To begin, you will need:
 | Scheduled    | Yes/No  | Default value = No |
 | ScheduledDateTime    | Date and time  | Include time |
 | Status    | Choice  | Not Sent, Send, Sent, Failed | Default value = Not Sent
+| Source    | Choice  | Pulse, Buddy
+| SyncedToBuddy    | Yes/No  | Default value = No
+| SyncedToPulse    | Yes/No  | Default value = No
+| BuddyId    | Single line of text  |
 
 4. Create a list named 'Users'.
 5. Create the following columns:
@@ -67,6 +79,12 @@ Value: Leave empty
 Title: ServiceAccountUPN
 
 Value: UPN (Email) of your service account
+
+9. Create a third list item in the above list with the following details:
+
+Title: PromptBuddyInstalled
+
+Value: 'true' (if you wish to integrate with Prompt Buddy) or 'false'.
 
 ## Step 2: Deploy Power Apps solution
 
@@ -112,5 +130,32 @@ Before rolling out Prompt Pulse, it is neccessary to configure the permisions on
 2. Amend the permissions on the **Users** list (Advanced Settings) to **Read items that were created by the user** and **Create items and edit items that were created by the user**.
 3. Break permission inheritance on the **Prompts** and **Users** lists and add only users/groups that will use Prompt Pulse.
 4. Ensure that admins who may need to read, edit and delete all list items have **Full Control**/**Owner** permissions on the SharePoint site.
+
+## Step 5: Deploy Prompt Buddy Integration
+
+These steps deploy the integration between Prompt Pulse and Prompt Buddy. This integration is provided in the form of a single Flow which is responsible for syncronizing items from the Prompt Buddy dataverse tables to the Prompts SharePoint list and visa versa.
+
+You may use any account to deploy this flow (it will need to be a member of the Teams Team in which Buddy is deployed), however it is worth noting that any prompts synced to Buddy will be created as the user who deploys this flow. Therefore you may wish to use the service account.
+
+This flow runs on a recurrent schedule and by default runs every hour, feel free to edit the flow and update the interval as needed.
+
+1. Launch Microsoft Teams. 
+2. Open the Power Apps app in Teams.
+3. Navigate to the **Build** tab.
+4. Select the environment in the left pane in which Prompt Buddy is deployed.
+5. Click **See all** in the list items created in the environment.
+6. Click **Import > Import solution** from the menu bar.
+7. Click **Browse** and locate the **PromptPulseBuddyIntegration_1.0.0.0.zip** solution zip file (if there is a newer version please use that).
+8. Click **Next**.
+9. Click **Next**.
+10. Click **Sign in** next to each of the connectors and wait for the green tick.
+11. Click **Next**.
+12. On the **Environment Variables** pane, select the SharePoint site you created and the **Prompts** List.
+13. Click **Import**.
+14. A message should be displayed to say the solution has been imported successfully.
+15. Locate the **Prompt Pulse Sync** flow and click on it.
+16. Click **Run** from the menu bar and click **Run flow**.
+18. Verify the run completes without errors.
+19. The integration is now deployed and the flow will automatically sync the prompts in both solutions.
 
 ### Deployment is now complete - enjoy using Prompt Pulse!
