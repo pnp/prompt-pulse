@@ -88,6 +88,8 @@ Prompts can be imported from CSV or Prompt Buddy.
 
 A csv file has been provided [Prompts.csv](../Prompts.csv) with pre-built prompts for you to import. Feel free to edit the csv and add/remove as many prompts as you like (you will also be able to remove when importing). The pre built csv will be update periodically with new prompts so please keep an eye out for changes.
 
+Note that we've provided an additional format for the sample prompts at [prompts.json](../prompts.json). This is the format used for importing INTO Prompt Buddy. If you want these sample prompts in both places, it may be easier to start by importing this list to Prompt Buddy, then using the import from Prompt Buddy steps below.
+
 #### Import from CSV
 
 To import prompts from CSV, follow the steps below:

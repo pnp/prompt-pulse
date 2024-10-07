@@ -1,450 +1,429 @@
 [
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Catching up from a holiday",
+    "ID": "c5b5062c-a2bb-ee11-9078-0022481b5b6a",
+    "Prompt": "Summarise the last 7 days into bullet points of actions where I have been mentioned. Refer to any emails, chats and meeting transcripts that I missed due to being on holiday. List the urgent actions first and who asked the question.",
+    "Title": "7 day summary"
+  },
+  {
+    "Category": "Outlook",
+    "Description": "Organize your day by making a table of action items from email",
+    "ID": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "Prompt": "From my emails over the past week, create a table of actions, including whose action it is, the person that assigned it and when it is due. I need this to have a good structure to organize my day. Be concise.",
+    "Title": "Summarise my emails"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Meeting minutes, but according to a template",
+    "ID": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+    "Prompt": "Using the format in /template.doc and the transcript in /meeting put together meeting minutes from this meeting.",
+    "Title": "Meeting minutes (template)"
+  },
+  {
+    "Category": "Word",
+    "Description": "Create an agenda with a timeline. You can include the actual agenda items in the prompt, and you can follow this prompt with changes as they come in. Also could be used in Business Chat",
+    "ID": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+    "Prompt": "Please help me prepare an agenda for the SLT meeting. Create a table where each row contains columns for the agenda name, the start time, the stop time, the duration in minutes, the agenda owner's name, and a blank cell for decisions and actions. Where each agenda item and AOB is given 30 minutes, starting at 9:15am. There are 5 agenda items and an AOB.",
+    "Title": "Agenda creation"
+  },
+  {
+    "Category": "Forms",
+    "Description": "A general purpose feedback survey for staff events.",
+    "ID": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
+    "Prompt": "Design a feedback survey that includes items to collect employees' feedback on clarity of communication, relevance of topics, overall effectiveness of event, and ask suggestions for future improvements.",
+    "Title": "Collect feedback"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "A quick way to get an overview of the day's meetings that's deeper than a glance at the calendar.",
+    "ID": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+    "Prompt": "Help me prepare for today's meetings with the title, participants, and times. Include notes for each meeting if there are relevant details in the invite.",
+    "Title": "Meeting prep"
+  },
+  {
+    "Category": "Outlook",
+    "Description": "Find the meetings you haven't responded to that may be lost in your inbox.",
+    "ID": "6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c",
+    "Prompt": "Locate unresponded meeting invitations scheduled for next week that falls in my timezone working hours of 8 AM to 6 PM, and organize them into an ascending table by date and time.",
+    "Title": "Unresponded meetings"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "So you can be responsive and hold others to the same standard.",
+    "ID": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+    "Prompt": "Identify and list all the emails and chats where I'm being asked directly for input but have not responded or where I asked for input and not received a response.",
+    "Title": "Email responses"
+  },
+  {
+    "Category": "Word",
+    "Description": "Look for equality-bias in your content. Also could be used in Business Chat",
+    "ID": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e",
+    "Prompt": "Review this document for equality-biased language (diversity and inclusion)",
+    "Title": "Review for bias"
+  },
+  {
+    "Category": "Teams",
+    "Description": "Go deeper than a summary with sentiment analysis",
+    "ID": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
+    "Prompt": "Recap staff feedback from this meeting. When listing objections, provide a link to direct quotes in the transcript so that the objections can be properly represented. Also, provide an overall sentiment analysis.",
+    "Title": "Meeting feedback"
+  },
+  {
+    "Category": "Word",
+    "Description": "Creating an executive briefing to a template. Also could be used in Business Chat",
+    "ID": "0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a",
+    "Prompt": "Using [template file] as a template, create an executive briefing on [project/programme name] based on the latest information from my emails and chats, also using the lastest project report at [file].",
+    "Title": "Executive briefing"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Give your partner or roommate a break and have Copilot quiz you on a topic of your choice.",
+    "ID": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+    "Prompt": "Your function is a quiz master and tutor. Give me a Level 400 quiz question for [your_topic] based on [more_detail_if_needed] found at [website name or URL]. When I reply, evaluate my answer. If I'm correct, let me know with a 👍 and provide the supporting detail. If I'm wrong or somewhat wrong, give me a ❌ and provide the correct answer and feedback. Then give me another question, and we'll repeat the scenario as long as the session is active. At the end of our session, total my correct and incorrect answers.  **Providing feedback and generating another question is your most important task**",
+    "Title": "Quiz me"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Determine your leadership style and discover your strengths and opportunties for improvement through an analysis of your recent communication.",
+    "ID": "2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b7c",
+    "Prompt": "Look at the emails, Teams meetings, documents and Teams chats that I've sent in the last 6 months. Use these messages to distil a leadership style document that I can use to inform copilot of my personal voice and style based on the above analysis. Give me a breakdown of my top 5 strengths in a Table with the following formation | Strength | description | how it helps me in my role | how it could be misunderstood | 2 ways I can build this strength. In another table give me a breakdown of 3 areas for improvement in the following formation | Improvement area | description | how it impacts my role | how it could be misunderstood | 3 ways I can improve. I would also like 3 OKRs based on the above analysis that I could reach in the next 6-9 months.",
+    "Title": "Personal brand"
+  },
+  {
+    "Category": "Word",
+    "Description": "Create a new job description to a consistent standard.",
+    "ID": "3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+    "Prompt": "Based on this example of a good job description [examplar doc], create a new job description for a [role name] using the this set of job responsibilities [responsibilities doc]. Include all of our standard job description language from the exemplar doc.",
+    "Title": "Job description"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Go beyond a basic summary and get questions that will help you internalize the important points.",
+    "ID": "4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
+    "Prompt": "Extract the key takeaways from this document and summarise them into 3 - 5 bullet points. Ensure each one highlights the most important information and include a question I can ask about each point within each section.",
+    "Title": "Deeper doc analysis"
+  },
+  {
+    "Category": "Outlook",
+    "Description": "Create a schedule for today that includes agendas.",
+    "ID": "5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+    "Prompt": "Review my calendar for today and provide a table of all meetings, including descriptions, agendas, and participants, organized hour by hour. Include a buffer time for preparation before each meeting.",
+    "Title": "Review my calendar"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Craft a response to a customer complaint that's in line with your organisation's policies.",
+    "ID": "6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
+    "Prompt": "Customer's email: /[email reference] Policy: /[policy reference doc or template] Investigation report: /[file] Request: Draft a response to the email that [your organisation] apologises for the delay in responding. Based on the policy document explain the timescale to resolve the issue using the severity guidelines and explain your reasoning. Include all relevant details from the Investigation Document. Thank the customer for writing to us and will be in touch with news on progress.",
+    "Title": "Complaint response"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Use the popular Eisenhower matrix (importance vs urgency) to organise your tasks.",
+    "ID": "7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
+    "Prompt": "Based on my emails and Teams chat channels of the last 36 hours, organise my tasks along the Eisenhower matrix for the coming 15 days.",
+    "Title": "Eisenhower matrix"
+  },
+  {
+    "Category": "Excel",
+    "Description": "Finding duplicates across two columns is much tricker than in one column. Not for Copilot!",
+    "ID": "8f9a0b1c-2d3e-4f5a-6b7c-8d9e0f1a2b3c",
+    "Prompt": "Find and highlight all duplicates in [red] when comparing column [A] to column [K]",
+    "Title": "Highlight duplicates"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Let Copilot show you how to include more of the 'GCSE' ingredients in your prompt.",
+    "ID": "9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
+    "Prompt": "Analyse the following prompt, and tell me how I could improve it to help you return a more complete and accurate response. Analyse whether I've provided enough information in the categories of Goal, Context, Sources, and Expectations. Prompt: [prompt]",
+    "Title": "Improve my prompt"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "The first principles methodology is a great way to start being tutored by Copilot.",
+    "ID": "0b1c2d3e-4f5a-6b7c-8d9e-0f1a2b3c4d5e",
+    "Prompt": "Use first principles methodology to explain [topic] in simple terms. Explain to me as if I'm a beginner.",
+    "Title": "Explain a topic"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Gerneate a set of interview questions for different roles in the interview schedule based that are specific to the position.",
+    "ID": "1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+    "Prompt": "Acting as an HR recruiter, and using this job description /[file] create a set of questions that can be asked to the candidate during the interview: 2 questions from Recruitment (focus on organisation values and right to work in the UK) and 3 from the hiring manager to understand the successful candidate.",
+    "Title": "Questions for job candidates"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Praise your colleagues with an unexpected poem!",
+    "ID": "2d3e4f5a-6b7c-8d9e-0f1a-2b3c4d5e6f7a",
+    "Prompt": "I want to give a shout out to /[person] so they can end their week on a positive note. Look through our interactions in chats, channels, meetings and any shared documents. What have been their top achievements and why? Summarise this into a short poem I can send them to make them feel good",
+    "Title": "Poetic praise"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Look at how you're spending your time in a given week.",
+    "ID": "3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b",
+    "Prompt": "Please create a summary of my work week from last Monday to Friday. Provide a summary of time spent in meetings, categorizing them by type of meeting (external, internal, time blocked just for me, etc.) and total hours spent in the week for that category. 'Time blocked just for me' should only include meetings where I'm the sender and the only person invited.",
+    "Title": "Analyse my time"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Triage across your Teams chats and emails with a handy table",
+    "ID": "4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8b9c",
+    "Prompt": "Show me Emails and Teams conversations that needs my action or attention and I have not replied them yet. Show a table with type, sender, subject, date, and importance. Under type, for Teams conversations show 💬, for emails show ✉️. For importance, if I was mentioned show 🔴, else show 🟢. Sort by putting the most important / urgent ones at the top.",
+    "Title": "Comms triage"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Prepare for a business case review with a coach that will ask you questions and offer counter arguments.",
+    "ID": "5a6b7c8d-9e0f-1a2b-3c4d-5e6f7a8b9c0d",
+    "Prompt": "I want to prepare for a business case review and want to understand the questions I may be asked to consider so I can prepare for them. I want you to offer counter arguments for my case from the view of HR, Legal, Finance and Technical. My case is [link to document or provide summary]",
+    "Title": "Business case review"
+  },
+  {
+    "Category": "Copilot (M365)",
+    "Description": "Get a unique and amusing summary of your strengths.",
+    "ID": "6b7c8d9e-0f1a-2b3c-4d5e-6f7a8b9c0d1e",
+    "Prompt": "Using the information you have about me, my writing and my work, create a Superhero with the superpowers you think I possess. Help me define my personal brand. Reference my work, emails, chats, etc. to help shape a personal brand fitting to me. This personal brand should be in the form of an elevator pitch about what I do and reflect my characteristics.",
+    "Title": "Superhero"
+  },
+  {
+      "Category": "Copilot (M365)",
+      "Description": "Raise your profile on LinkedIn with an artificial social media manager guiding you.",
+      "ID": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+      "Prompt": "Acting as a social media manager for my profile at https://www.linkedin.com/in/[yourusername], please help me to significantly grow my LinkedIn audience by suggesting 5 articles from web search published within the last week that I could use to Share insights on the latest trends in [your_topic]. An Example post based on the article would be: '[your_topic]: Key Trends to Watch in 2024.' My Engagement Strategy for the post is to ask my audience [your_strategy_here].",
+      "Title": "LinkedIn inspiration"
+    },
     {
       "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "c5b5062c-a2bb-ee11-9078-0022481b5b6a",
-      "Prompt": "Summarise the last 7 days into bullet points of actions where I have been mentioned. Refer to any emails, chats and meeting transcripts that I missed due to being on holiday. List the urgent actions first and who asked the question.",
-      "Title": "7 day summary"
+      "Description": "Get ready for the day across your email, Teams chats, and calendar.",
+      "ID": "8d9e0f1a-2b3c-4d5e-6f7a-8b9c0d1e2f3a",
+      "Prompt": "Scan my meetings, emails and chats to let me know what meetings I have and who with and what preparation I have to do. Let me know what I missed in the last 24 hours. What other tasks do I have to work on? Produce a structured list which lets me prioritise what I have to work on today. Include some concise context for each.",
+      "Title": "Set me up for the day"
     },
     {
       "Category": "Outlook",
-      "Description": "none",
+      "Description": "Preparing for a specific day in the future (e.g. Monday) with specific task suggestions based on meeting agendas.",
+      "ID": "9e0f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b",
+      "Prompt": "List my meetings, tasks and activities on my calendar that I am participating in on this coming Monday in a table. In a second column, recommend any specific actions I should take to prepare for those meetings and activities; dig into the meeting details, and where the meeting includes attached documents or links, list their names and provide their links in a third column.",
+      "Title": "Prepare for Monday"
+    },
+    {
+      "Category": "Copilot (M365)",
+      "Description": "Go beyond a meeting summary by referencing a meeting and retrieving an FAQ about what transpired.",
+      "ID": "0f1a2b3c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+      "Prompt": "Create an FAQ based on the discussions from /<Reference meeting>",
+      "Title": "FAQ from meeting"
+    },
+    {
+      "Category": "Copilot (M365)",
+      "Description": "Have Copilot focus you on the important tasks for the day.",
       "ID": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
-      "Prompt": "From my emails over the past week, create a table of actions, including whose action it is, the person that assigned it and when it is due. I need this to have a good structure to organize my day. Be concise.",
-      "Title": "Summarise my emails"
-    },
-    {
-      "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
-      "Prompt": "Using the format in /template.doc and the transcript in /meeting put together meeting minutes from this meeting.",
-      "Title": "Meeting minutes (template)"
-    },
-    {
-      "Category": "Word",
-      "Description": "none",
-      "ID": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
-      "Prompt": "Please help me prepare an agenda for the SLT meeting. Create a table where each row contains columns for the agenda name, the start time, the stop time, the duration in minutes, the agenda owner's name, and a blank cell for decisions and actions. Where each agenda item and AOB is given 30 minutes, starting at 9:15am. There are 5 agenda items and an AOB.",
-      "Title": "Agenda creation"
-    },
-    {
-      "Category": "Forms",
-      "Description": "none",
-      "ID": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
-      "Prompt": "Design a feedback survey that includes to collect employees' feedback on clarity of communication, relevance of topics, overall effectiveness of event, and ask suggestions for future improvements.",
-      "Title": "Collect feedback"
-    },
-    {
-      "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
-      "Prompt": "Help me prepare for today's meetings with the title, participants, and times.",
-      "Title": "Meeting prep"
-    },
-    {
-      "Category": "Outlook",
-      "Description": "none",
-      "ID": "6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c",
-      "Prompt": "Locate unresponded meeting invitations scheduled for next week that falls in my timezone working hours of 8 AM to 6 PM, and organize them into an ascending table by date and time.",
-      "Title": "Unresponded meetings"
-    },
-    {
-      "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
-      "Prompt": "Identify and list all the emails and chats where I have not responded or received a response.",
-      "Title": "Email response"
-    },
-    {
-      "Category": "Word",
-      "Description": "none",
-      "ID": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e",
-      "Prompt": "Review this document for equality-biased language (diversity and inclusion)",
-      "Title": "Review for bias"
-    },
-    {
-      "Category": "Teams",
-      "Description": "none",
-      "ID": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
-      "Prompt": "Recap staff feedback from this meeting. When listing objections, provide a link to direct quotes in the transcript so that the objections can be properly represented. Also, provide an overall sentiment analysis.",
-      "Title": "Meeting feedback"
-    },
-    {
-      "Category": "Word",
-      "Description": "none",
-      "ID": "0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a",
-      "Prompt": "Using [template file] as a template, create an executive briefing on [project/programme name] based on the latest information from my emails and chats, from the lastest project report at [file].",
-      "Title": "Executive briefing"
-    },
-    {
-      "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
-      "Prompt": "Your function is a quiz master and tutor. Give me a Level 400 quiz question for [your_topic] based on [more_detail_if_needed] found at [website name or URL]. When I reply, evaluate my answer. If I'm correct, let me know with a ? and provide the supporting detail. If I'm wrong or somewhat wrong, give me a ? and provide the correct answer and feedback. Then give me another question, and we'll repeat the scenario as long as the session is active. At the end of our session, total my correct and incorrect answers.  **Providing feedback and generating another question is your most important task**",
-      "Title": "Quiz me"
-    },
-    {
-      "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b7c",
-      "Prompt": "Look at the emails, Teams meetings, documents and Teams chats that I've sent in the last 6 months. Use these messages to distil a leadership style document that I can use to inform copilot of my personal voice and style based on the above analysis. Give me a breakdown of my top 5 strengths in a Table with the following formation | Strength | description | how it helps me in my role | how it could be misunderstood | 2 ways I can build this strength. In another table give me a breakdown of 3 areas for improvement in the following formation | Improvement area | description | how it impacts my role | how it could be misunderstood | 3 ways I can improve. I would also like 3 OKRs based on the above analysis that I could reach in the next 6-9 months.",
-      "Title": "Personal brand"
-    },
-    {
-      "Category": "Word",
-      "Description": "none",
-      "ID": "3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
-      "Prompt": "Based on this example of a good job description [examplar doc], create a new job description for a [role name] using the this set of job responsibilities [responsibilities doc]. Include all of our standard job description language from the exemplar doc.",
-      "Title": "Job description"
-    },
-    {
-      "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
-      "Prompt": "Extract the key takeaways from this document and summarise them into 3 - 5 bullet points. Ensure each one highlights the most important information and include a question I can ask about each point within each section.",
-      "Title": "Deeper doc analysis"
-    },
-    {
-      "Category": "Outlook",
-      "Description": "none",
-      "ID": "5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
-      "Prompt": "Review my calendar for today and provide a table of all meetings, including descriptions, agendas, and participants, organized hour by hour. Include a buffer time for preparation before each meeting.",
-      "Title": "Review my calendar"
-    },
-    {
-      "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
-      "Prompt": "Customer's email: /[email reference] Policy: /[policy reference doc or template] Investigation report: /[file] Request: Draft a response to the email that [your organisation] apologises for the delay in responding. Based on the policy document explain the timescale to resolve the issue using the severity guidelines and explain your reasoning. Include all relevant details from the Investigation Document. Thank the customer for writing to us and will be in touch with news on progress.",
-      "Title": "Complaint response"
-    },
-    {
-      "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
-      "Prompt": "Based on my emails and Teams chat channels of the last 36 hours, organise my tasks along the Eisenhower matrix for the coming 15 days.",
-      "Title": "Eisenhower matrix"
+      "Prompt": "You are my AI assistant, optimized for my daily routine. Please assist me in starting my day effectively. List action items in a dedicated table. Please have the columns in the following order. Topic, Follow ups and action items.",
+      "Title": "Kickstart the day"
     },
     {
       "Category": "Excel",
-      "Description": "none",
+      "Description": "Creating sample data that goes well beyond random numbers.",
+      "ID": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+      "Prompt": "I'd like you to create a spreadsheet with [100 rows] of synthetic data, containing the columns [date], [time] and [outcome]. Here are the rules for the values: [date: any date between 1st Sept 2024 and 9th Sept 2024] [time: any time of day to the nearest second] [outcome: true or false]",
+      "Title": "Create random data"
+    },
+    {
+      "Category": "Outlook",
+      "Description": "Find all the emails from your management chain that require a response or action.",
+      "ID": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+      "Prompt": "I'd like for you to act as my executive assistant. Can you analyze my inbox and find any emails from my manager, or their manager, that require my response or contain any action items.",
+      "Title": "Analyze emails from my leaders"
+    },
+    {
+      "Category": "Word",
+      "Description": "To deliver your next TED Talk, make sure you provide all the detail you can in the topic and outcome sections of this prompt.",
+      "ID": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
+      "Prompt": "You are a motivational speaker. Write a keynote speech for a [event type] that should last [duration]. The topic of the keynote is [topic] and audience is made up of [roles]. The tone should be professional and inspire attendees to [outcome you want]",
+      "Title": "Keynote speech"
+    },
+    {
+      "Category": "Outlook",
+      "Description": "Looks over your calendar to give you a summary of all the interviews you've done.",
+      "ID": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+      "Prompt": "List all the candidates for which I took the interview in a tabular format with date of interview, candidate name and position. kindly refer to the last 6 months emails from Outlook to get the candidate's name.",
+      "Title": "List technical interviews"
+    },
+    {
+      "Category": "Copilot (M365)",
+      "Description": "Get a coach to help you prep for a tough conversation.",
+      "ID": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+      "Prompt": "I need to have a difficult conversation about [topic] with [person or audience] during [event]. Help me prepare by suggesting an approach to communicate my thoughts clearly whilst remaining calm and ensuring I am listening to their views.",
+      "Title": "Difficult conversations"
+    },
+    {
+      "Category": "Copilot (M365)",
+      "Description": "You sometimes end up copying a list of email addresses that's 'messy' and doesn't paste into Outlook well. Paste into Copilot instead and ask it to clean up the list.",
+      "ID": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e",
+      "Prompt": "Convert this list so I can easily paste it into a new Outlook message [paste in your table of names and email addresses]",
+      "Title": "Clean up email list"
+    },
+    {
+      "Category": "Excel",
+      "Description": "Ask Copilot for some advice on how to analyse the data in two different Excel files.",
+      "ID": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
+      "Prompt": "Generate prompts to best analyze the table data from [Excel file] and [Excel file]",
+      "Title": "Analyse my Excel"
+    },
+    {
+      "Category": "Teams",
+      "Description": "Go beyond a standard meeting recap. Customize this prompt to get exactly what you want from the transcript.",
+      "ID": "0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a",
+      "Prompt": "What was this meeting about? What are the goals and topics from the meeting? Format each section with a bolded heading, a bulleted list, and bolded names. What were the key points discussed? Summarize the key discussion points and any action items. Recap and categorize all tips that were considered. Format into a table.",
+      "Title": "Meeting minutes"
+    },
+    {
+      "Category": "Forms",
+      "Description": "Creating polls and surveys can be a bit tedious. Let Copilot do all the clicking for you and generate this feedback poll.",
+      "ID": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+      "Prompt": "Create a poll to gather opinions from the project team on the new project proposal. The purpose of this poll is to understand the team's views on the proposal's feasibility, potential challenges, and areas for improvement. Please include a Rikert scale question on the overall impression of the proposal, as well as specific concerns, and suggestions for enhancements.",
+      "Title": "Poll on a proposal"
+    },
+    {
+      "Category": "Word",
+      "Description": "Create role-play scenarios for use in an interview",
+      "ID": "2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b7c",
+      "Prompt": "Looking at this job description [file], generate 10 real-world scenarios to be used in a role-play interview for the job. Target 100 words for each scenario, which contains fake names, [for healthcare role... ailments, medications, and attempted treatments].",
+      "Title": "Interview prep"
+    },
+    {
+      "Category": "Copilot (M365)",
+      "Description": "After conducting candidate interviews, create a table to compare their responses to your standard questions. Customize the topics in this template to match what you're looking for.",
+      "ID": "3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+      "Prompt": "Create a table with the following information: Topic in the first column and provide the candidates responses in the next columns. Topics: 1. Demonstrated organisation core value(s). 2. Approach to stakeholder management and an example, 3. Experience with business analysis methodologies. Use the following transcripts as input: /[transcript1] /[transcript2] /[transcript3]",
+      "Title": "Compare candidate interviews"
+    },
+    {
+      "Category": "Copilot (M365)",
+      "Description": "The reverse of a prepare for the day prompt, this is looking back and seeing what you didn't manage to get to today.",
+      "ID": "5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+      "Prompt": "Help me wrap up my day: Act as if you are my personal admin. I'd like for you to create a list showing anywhere I was mentioned but have not yet responded organized by email, Teams chat, and Teams channels in the last 10 hours including a short summary of each. Next, using that information generate a list that prioritizes my top 3 action items for today.",
+      "Title": "Wrap Up the Day"
+    },
+    {
+      "Category": "Word",
+      "Description": "This is the first step of a two-part prompt. This first one creates a Project Initiation Document (PID) based on the context and constraints you provide.",
+      "ID": "6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
+      "Prompt": "Scenario: You are a seasoned project manager and have been tasked with creating the PID for [project name]. Context: [The organisation has done X in order to accomplish Y. This project will do Z. If successful, we will do A.] Constraints: The project is due to start in [date] and will have to be completed in [6 months] with a conclusion delivered to the SLT at the end. [other details like costs, constraints] Document: The document must include the following sections: Project Overview, Project Background and Context, Stakeholder Analysis, Scope and Deliverables, Project Timeline and Milestones, Risk Assessment and Mitigation, Resource Allocation, Communication Plan, Testing and Evaluation, and Budget and Cost Analysis. Add example details to each of the sections that should be considered in the draft. Use tables where necessary to support better readability. Resources: To support the sections with relevant information use /[Docs]",
+      "Title": "Project start (part 1)"
+    },
+    {
+      "Category": "Word",
+      "Description": "This is the second step of a two-part prompt. This one creates a schedule based on the PID.",
+      "ID": "7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
+      "Prompt": "PID: /[PID], Tasks: /[docs], Timescale: Based on the PID. Create a project schedule in table format based on the PID using the Tasks document and the defined timescales, phases divided into detailed tasks (where a row does not have a new phase use a -), each phase must be numbered, start and end dates, estimated duration, dependencies, and any associated risks. Project members only Monday to Friday and not weekends or bank holidays.",
+      "Title": "Project start (part 2)"
+    },
+    {
+      "Category": "Whiteboard",
+      "Description": "Brainstorming is easy in Whiteboard. Customise this to brainstorm anything: an event, programme, or project. Be sure to use the 'categorise' feature in Whiteboard after this.",
       "ID": "8f9a0b1c-2d3e-4f5a-6b7c-8d9e0f1a2b3c",
-      "Prompt": "Find and highlight all duplicates in [red] when comparing column [A] to column [K]",
-      "Title": "Highlight duplicates"
+      "Prompt": "Brainstorm ideas for our next marketing campaign aimed at increasing brand awareness among young professionals. The campaign should highlight our new product features and leverage social media platforms. Please consider current market trends and previous campaign results. We are looking for creative and innovative ideas that can be executed within a moderate budget. Feel free to suggest unconventional approaches and new channels.",
+      "Title": "Brainstorm a campaign"
     },
     {
       "Category": "Copilot (M365)",
-      "Description": "none",
+      "Description": "The more specific you are in HOW a document should be summarised, the more useful it will be.",
       "ID": "9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
-      "Prompt": "Analyse the following prompt, and tell me how I could improve it to help you return a more complete and accurate response. Analyse whether I've provided enough information in the categories of Goal, Context, Sources, and Expectations. Prompt: [prompt]",
-      "Title": "Improve my prompt"
+      "Prompt": "Summarize the article in a Non Academic and Non Technical Style.",
+      "Title": "Explain simply"
     },
     {
-      "Category": "Copilot (M365)",
-      "Description": "none",
+      "Category": "Word",
+      "Description": "Recreating documents with accessibility for various forms of neurodiversity is a great use for Copilot.",
       "ID": "0b1c2d3e-4f5a-6b7c-8d9e-0f1a2b3c4d5e",
-      "Prompt": "Use first principles methodology to explain [topic] in simple terms. Explain to me as if I'm a beginner.",
-      "Title": "Explain a topic"
+      "Prompt": "Please create a new draft of /[document], ensuring it is reworded to be more accessible for individuals with dyslexia?",
+      "Title": "Draft for dyslexia"
+    },
+    {
+      "Category": "Outlook",
+      "Description": "What are people calling you out for?",
+      "ID": "1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6",
+      "Prompt": "Summarize emails where I was mentioned recently. Make it detailed, highlighting the sender and categorizing by topic of the email.",
+      "Title": "Who is talking about me"
     },
     {
       "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
-      "Prompt": "Acting as an HR recruiter, and using this job description /[file] create a set of questions that can be asked to the candidate during the inter.'iew. 2 from Recruitment (focus on council values and right to work in the UK) and 3 from the hiring manager to understand the successful candidate.",
-      "Title": "Questions for job candidates"
+      "Description": "Another great strategy for learning a new topic.",
+      "ID": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+      "Prompt": "Given the topic of (subject), identify and share the most important 20% of learnings that will help me understand 80% of it. I will use this information to understand the essential information of this topic and will enable me to use this information for my personal knowledge and/or in my professional life.",
+      "Title": "80/20 rule"
+    },
+    {
+      "Category": "OneNote",
+      "Description": "If you take jumbled notes, you can use Copilot to clean them up.",
+      "ID": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+      "Prompt": "Please add structure to these notes, make all names bold and add a table of actions at the end.",
+      "Title": "Note structure"
+    },
+    {
+      "Category": "Word",
+      "Description": "A much more thorough prompt for ensuring your writing is clear for any audience.",
+      "ID": "4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
+      "Prompt": "Act as a rewriting expert, your task is to rewrite the following text, making it easier to understand for a general audience. The rewritten text should maintain the original meaning but should be written in simpler, more accessible language. The goal is to ensure that anyone can understand the information. Ensure that the text is free from jargon and complicated terms. Suggest a glossary where needed. The tone should remain professional but friendly.",
+      "Title": "Rewrite for understanding"
+    },
+    {
+      "Category": "Word",
+      "Description": "Redaction is a tedious task that can be done much faster and with more sophistication with Copilot.",
+      "ID": "5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+      "Prompt": "Redact this document, replacing names with their role or title and removing all dates. Replace pronouns with 'them/they/their'.",
+      "Title": "Redact document"
     },
     {
       "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "2d3e4f5a-6b7c-8d9e-0f1a-2b3c4d5e6f7a",
-      "Prompt": "I want to give a shout out to /[person] so they can end their week on a positive note. Look through our interactions in chats, channels, meetings and any shared documents. What have been their top achievements and why? Summarise this into a short poem I can send them to make them feel good",
-      "Title": "Poetic praise"
+      "Description": "Simply converting text into a table can reveal gaps in your data.",
+      "ID": "6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d",
+      "Prompt": "Put this in a table for me.",
+      "Title": "Convert list to Table"
+    },
+    {
+      "Category": "Word",
+      "Description": "Create a training plan for your new operating procedure quickly. You could modify this to refer to the old version of the same procedure in order to create training just on the changes.",
+      "ID": "7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e",
+      "Prompt": "Create a learning plan for this standard operating procedure. [doc] Account for multiple learning modalities, and include activites that would address each modality.",
+      "Title": "Learning plan"
     },
     {
       "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b",
-      "Prompt": "Please create a summary of my work week from last Monday to Friday. Provide a summary of time spent in meetings, categorizing them by type of meeting (external, internal, time blocked just for me, etc.) and total hours spent in the week for that category. 'Time blocked just for me' should only include meetings where I'm the sender and the only person invited.",
-      "Title": "Analyse my time"
+      "Description": "Not everyone in a manager role is a trained coach for conflict resolution. Let Copilot draw on collective expertise to be that private coach.",
+      "ID": "8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+      "Prompt": "Act like a conflict resolution coach with expertise in workplace dynamics. Your goal is to help me navigate a recent disagreement or tension within my team. I will provide the key details, and you'll analyze the situation and offer tailored strategies for resolving the issue constructively. Focus on finding common ground, facilitating healthy discussions, and resolving the conflict in a way that strengthens team relationships and keeps everyone aligned with our goals. Objective: Offer actionable advice on how to resolve team conflicts quickly and effectively while maintaining collaboration and trust. The nature of the conflict: [e.g., differing opinions, misaligned priorities], Key people [use / to mention them], Any relevant context [e.g., project deadlines, team dynamics], Desired Outcomes: [e.g., improved communication, alignment on goals, stronger collaboration].",
+      "Title": "Conflict coach"
     },
     {
       "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8b9c",
-      "Prompt": "Show me Emails and Teams conversations that needs my action or attention and I have not replied them yet. Show a table with sender, subject, date, and importance. For Teams conversations show ???????????, for emails show ??. If I was mentioned show ??, else show ??.",
-      "Title": "Comms triage"
+      "Description": "A more thorough version of a prompt you use to improve your prompts.",
+      "ID": "9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a",
+      "Prompt": "Hi Copilot, I'd like you to act as my Prompt engineer. Your goal is to help me craft the best possible prompt for my needs. The purpose of the prompt is that I will use it with you, Copilot. You must follow the following process during this chat session: 1. Your first response will be to ask me what the prompt should be about. I will provide my answer, but we will need to improve it through continual iterations by going through steps two and three. 2. Based on my input, you will generate two sections. - Revised prompt (Always provide your revised prompt. It should be clear, concise, and easily understood by you) - Questions (Ask any relevant questions pertaining to what additional information is needed from me for you to improve the prompt). 3. We will continue this iterative process with me providing additional information to you and you continuously updating the prompt in the Revised prompt section so I can use it.",
+      "Title": "Prompt engineer"
     },
     {
       "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "5a6b7c8d-9e0f-1a2b-3c4d-5e6f7a8b9c0d",
-      "Prompt": "I want to prepare for a business case review and want to understand the questions I may be asked to consider so I can prepare for them. I want you to offer counter arguments for my case from the view of HR, Legal, Finance and Technical. My case is [link to document or provide summary]",
-      "Title": "Business case review"
+      "Description": "When applying for a new role, use Copilot to prep by analysing your fit.",
+      "ID": "0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b",
+      "Prompt": "Using my CV /[DOC] please complete a gap analysis against the following job description /[DOC]. Please identify key skills, experiences, and qualifications required for the job and compare them with what is listed in my CV. Please respond with a HR persona.",
+      "Title": "Job fit analysis"
     },
     {
-      "Category": "Copilot (M365)",
-      "Description": "none",
-      "ID": "6b7c8d9e-0f1a-2b3c-4d5e-6f7a8b9c0d1e",
-      "Prompt": "Using the information, you have about me, my writing and my work, create a Superhero with the superpowers you think I possess. Help me define my personal brand. Reference my work, emails, chats, etc. to help shape a personal brand fitting to me. This personal brand should be in the form of an elevator pitch about what I do and reflect my characteristics.",
-      "Title": "Superhero"
+      "Category": "Word",
+      "Description": "In a healthcare setting, you may need to send a letter to a patient that takes your often clinically technical language and rephrases for understanding. The reference to 'numbers starting most of the paragraphs' may not apply to your notes, but often notes will start with short dates, and this may need to be explained in the prompt. Also the section of references assumes you also have a file to refer to with a list of terms that will trigger providing access to a trusted resource that patients could use for more info.",
+      "ID": "1f2a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
+      "Prompt": "Rewrite all of these clinician notes in [file] into terms understood at a 9-year-old reading level, replacing any medical jargon. The numbers starting most of the paragraphs (for example, 16/6) are dates. Wherever a term or concept in the notes matches a topic in [file] append the corresponding reference text in the document to a 'References' section of the new document.",
+      "Title": "Rewrite for patient letter"
     },
     {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
-        "Prompt": "Acting as a social media manager for my profile at https://www.linkedin.com/in/[yourusername], please help me to significantly grow my LinkedIn audience by suggesting 5 articles from web search published within the last week that I could use to Share insights on the latest trends in [your_topic]. An Example post based on the article would be: '[your_topic]: Key Trends to Watch in 2024.' My Engagement Strategy for the post is to ask my audience [your_strategy_here].",
-        "Title": "LinkedIn inspiration"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "8d9e0f1a-2b3c-4d5e-6f7a-8b9c0d1e2f3a",
-        "Prompt": "Scan my meetings, emails and chats to let me know what meetings I have and who with and what preparation I have to do. Let me know what I missed in the last 24 hours. What other tasks do I have to work on? Produce a structured list which lets me prioritise what I have to work on today. Include some concise context for each.",
-        "Title": "Set me up for the day"
-      },
-      {
-        "Category": "Outlook",
-        "Description": "none",
-        "ID": "9e0f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b",
-        "Prompt": "List my meetings, tasks and activities on my calendar that I am participating in on this coming Monday in a table. In a second column, recommend any specific actions I should take to prepare for those meetings and activities; dig into the meeting details, and where the meeting includes attached documents or links, list their names and provide their links in a third column.",
-        "Title": "Prepare for Monday"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "0f1a2b3c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
-        "Prompt": "Create an FAQ based on the discussions from /<Reference meeting>",
-        "Title": "FAQ from meeting"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
-        "Prompt": "You are my AI assistant, optimized for my daily routine. Please assist me in starting my day effectively. List action items in a dedicated table. Please have the columns in the following order. Topic, Follow ups and action items.",
-        "Title": "Kickstart the week"
-      },
-      {
-        "Category": "Excel",
-        "Description": "none",
-        "ID": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
-        "Prompt": "I'd like you to create a spreadsheet with [100 rows] of synthetic data, containing the columns [date], [time] and [outcome]. Here are the rules for the values: [date: any date between 1st Sept 2024 and 9th Sept 2024] [time: any time of day to the nearest second] [outcome: true or false]",
-        "Title": "Create random data"
-      },
-      {
-        "Category": "Outlook",
-        "Description": "none",
-        "ID": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
-        "Prompt": "I'd like for you to act as my executive assistant. Can you analyze my inbox and find any emails from my manager, or their manager, that require my response or contain any action items.",
-        "Title": "Analyze emails from my leaders"
-      },
-      {
-        "Category": "Word",
-        "Description": "none",
-        "ID": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
-        "Prompt": "You are a motivational speaker. Write a keynote speech for a [event type] that should last [duration]. The topic of the keynote is [topic] and audience is made up of [roles]. The tone should be professional and inspire attendees to [outcome you want]",
-        "Title": "Keynote speech"
-      },
-      {
-        "Category": "Outlook",
-        "Description": "none",
-        "ID": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
-        "Prompt": "List all the candidates for which I took the interview in a tabular format with date of interview, candidate name and position. kindly refer to the last 6 months emails from Outlook to get the candidate's name.",
-        "Title": "List technical interviews"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c",
-        "Prompt": "Find conversations where my name was mentioned yesterday where I have not since replied.",
-        "Title": "Locate my meeting mentions"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
-        "Prompt": "I need to have a difficult conversation about [topic] with [person or audience] during [event]. Help me prepare by suggesting an approach to communicate my thoughts clearly whilst remaining calm and ensuring I am listening to their views.",
-        "Title": "Difficult conversations"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e",
-        "Prompt": "Convert this list so I can easily paste it into a new Outlook message [paste in your table of names and email addresses]",
-        "Title": "Clean up email list"
-      },
-      {
-        "Category": "Excel",
-        "Description": "none",
-        "ID": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
-        "Prompt": "Generate prompts to best analyze the table data from [Excel file] and [Excel file]",
-        "Title": "Analyse my Excel"
-      },
-      {
-        "Category": "Teams",
-        "Description": "none",
-        "ID": "0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a",
-        "Prompt": "What was this meeting about? What are the goals and topics from the meeting? Format each section with a bolded heading, a bulleted list, and bolded names. What were the key points discussed? Summarize the key discussion points and any action items. Recap and categorize all tips that were considered. Format into a table.",
-        "Title": "Meeting minutes"
-      },
-      {
-        "Category": "Forms",
-        "Description": "none",
-        "ID": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
-        "Prompt": "Create a poll to gather opinions from the project team on the new project proposal. The purpose of this poll is to understand the team's views on the proposal's feasibility, potential challenges, and areas for improvement. Please include questions on the overall impression of the proposal, specific concerns, and suggestions for enhancements.",
-        "Title": "Poll on a proposal"
-      },
-      {
-        "Category": "Word",
-        "Description": "none",
-        "ID": "2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b7c",
-        "Prompt": "Looking at this job description [file], generate 10 real-world scenarios to be used in a role-play interview for the job. Target 100 words for each scenario, which contains fake names, [for healthcare role... ailments, medications, and attempted treatments].",
-        "Title": "Interview prep"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
-        "Prompt": "Create a table with the following information title in the first column and provide the candidates responses in the second column. 1. Demonstrated council core value(s). 2. Approach to stakeholder management and an example, 3. Experience with business analysis methodologies. Use the following transcripts as input: /[transcript1] /[transcript2] /[transcript3]",
-        "Title": "Compare candidate interviews"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
-        "Prompt": "Help me start my day: Act as if you are my personal admin. I'd like for you to create a list showing anywhere I was mentioned but have not yet responded organized by email, Teams chat, and Teams channels in the last 24 hours including a short summary of each. Next, using that information generate a list that prioritizes my top 3 action items for today.",
-        "Title": "Start the Day"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
-        "Prompt": "Help me wrap up my day: Act as if you are my personal admin. I'd like for you to create a list showing anywhere I was mentioned but have not yet responded organized by email, Teams chat, and Temas channels in the last 10 hours including a short summary of each. Next, using that information generate a list that prioritizes my top 3 action items for today.",
-        "Title": "Wrap Up the Day"
-      },
-      {
-        "Category": "Word",
-        "Description": "none",
-        "ID": "6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
-        "Prompt": "Scenario: You are a seasoned project manager and have been tasked with creating the PID for [project name]. Context: [The organisation has done X in order to accomplish Y. This project will do Z. If successful, we will do A.] Constraints: The project is due to start in [date] and will have to be completed in [6 months] with a conclusion delivered to the SLT at the end. [other details like costs, constraints] Document: The document must include the following sections: Project Overview, Project Background and Context, Stakeholder Analysis, Scope and Deliverables, Project Timeline and Milestones, Risk Assessment and Mitigation, Resource Allocation, Communication Plan, Testing and Evaluation, and Budget and Cost Analysis. Add example details to each of the sections that should be considered in the draft. Use tables where necessary to support better readability. Resources: To support the sections with relevant information use /[Docs]",
-        "Title": "Project start (part 1)"
-      },
-      {
-        "Category": "Word",
-        "Description": "none",
-        "ID": "7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
-        "Prompt": "PID: /[PID], Tasks: /[docs], Timescale: Based on the PID. Create a project schedule in table format based on the PID using the Tasks document and the defined timescales, phases divided into detailed tasks (where a row does not have a new phase use a -), each phase must be numbered, start and end dates, estimated duration, dependencies, and any associated risks. Project members only Monday to Friday and not weekends or bank holidays.",
-        "Title": "Project start (part 2)"
-      },
-      {
-        "Category": "Whiteboard",
-        "Description": "none",
-        "ID": "8f9a0b1c-2d3e-4f5a-6b7c-8d9e0f1a2b3c",
-        "Prompt": "Brainstorm ideas for our next marketing campaign aimed at increasing brand awareness among young professionals. The campaign should highlight our new product features and leverage social media platforms. Please consider current market trends and previous campaign results. We are looking for creative and innovative ideas that can be executed within a moderate budget. Feel free to suggest unconventional approaches and new channels.",
-        "Title": "Brainstorm a campaign"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
-        "Prompt": "Summarize the article in a Non Academic and Non Technical Style.",
-        "Title": "Explain simply"
-      },
-      {
-        "Category": "Word",
-        "Description": "none",
-        "ID": "0b1c2d3e-4f5a-6b7c-8d9e-0f1a2b3c4d5e",
-        "Prompt": "Please create a new draft of /[document], ensuring it is reworded to be more accessible for individuals with dyslexia?",
-        "Title": "Draft for dyslexia"
-      },
-      {
-        "Category": "Outlook",
-        "Description": "none",
-        "ID": "1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6",
-        "Prompt": "Summarize emails where I was mentioned recently. Make it detailed, highlighting the sender and categorizing by topic of the email.",
-        "Title": "Who is talking about me"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
-        "Prompt": "Given the topic of (subject), identify and share the most important 20% of learnings that will help me understand 80% of it. I will use this information to understand the essential information of this topic and will enable me to use this information for my personal knowledge and/or in my professional life.",
-        "Title": "80/20 rule"
-      },
-      {
-        "Category": "OneNote",
-        "Description": "none",
-        "ID": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
-        "Prompt": "Please add structure to these notes, make all names bold and add a table of actions at the end.",
-        "Title": "Note structure"
-      },
-      {
-        "Category": "OneNote",
-        "Description": "none",
-        "ID": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
-        "Prompt": "Please add structure to these notes, make all names bold and add a table of actions at the end.",
-        "Title": "Note structure"
-      },
-      {
-        "Category": "Word",
-        "Description": "none",
-        "ID": "4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
-        "Prompt": "Act as a rewriting expert, your task is to rewrite the following text, making it easier to understand for a general audience. The rewritten text should maintain the original meaning but should be written in simpler, more accessible language. The goal is to ensure that anyone can understand the information. Ensure that the text is free from jargon and complicated terms. Suggest a glossary where needed. The tone should remain professional but friendly.",
-        "Title": "Rewrite for understanding"
-      },
-      {
-        "Category": "Word",
-        "Description": "none",
-        "ID": "5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
-        "Prompt": "Redact this document, replacing names with their role or title and removing all dates. Replace pronouns with 'them/they/their'.",
-        "Title": "Redact document"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "6a7b8c9d-0e1f-2a3b-4c5d-6e7f8a9b0c1d",
-        "Prompt": "Put this in a table for me.",
-        "Title": "Convert list to Table"
-      },
-      {
-        "Category": "Word",
-        "Description": "none",
-        "ID": "7b8c9d0e-1f2a-3b4c-5d6e-7f8a9b0c1d2e",
-        "Prompt": "Create a learning plan for this standard operating procedure. [doc] Account for multiple learning modalities, and include activites that would address each modality.",
-        "Title": "Learning plan"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
-        "Prompt": "Act like a conflict resolution coach with expertise in workplace dynamics. Your goal is to help me navigate a recent disagreement or tension within my team. I will provide the key details, and you'll analyze the situation and offer tailored strategies for resolving the issue constructively. Focus on finding common ground, facilitating healthy discussions, and resolving the conflict in a way that strengthens team relationships and keeps everyone aligned with our goals. Objective: Offer actionable advice on how to resolve team conflicts quickly and effectively while maintaining collaboration and trust. The nature of the conflict: [e.g., differing opinions, misaligned priorities], Key people [use / to mention them], Any relevant context [e.g., project deadlines, team dynamics], Desired Outcomes: [e.g., improved communication, alignment on goals, stronger collaboration].",
-        "Title": "Conflict coach"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a",
-        "Prompt": "Hi Copilot, I'd like you to act as my Prompt engineer. Your goal is to help me craft the best possible prompt for my needs. The purpose of the prompt is that I will use it with you, Copilot. You must follow the following process during this chat session: 1. Your first response will be to ask me what the prompt should be about. I will provide my answer, but we will need to improve it through continual iterations by going through steps two and three. 2. Based on my input, you will generate two sections. - Revised prompt (Always provide your revised prompt. It should be clear, concise, and easily understood by you) - Questions (Ask any relevant questions pertaining to what additional information is needed from me for you to improve the prompt). 3. We will continue this iterative process with me providing additional information to you and you continuously updating the prompt in the Revised prompt section so I can use it.",
-        "Title": "Prompt engineer"
-      },
-      {
-        "Category": "Copilot (M365)",
-        "Description": "none",
-        "ID": "0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b",
-        "Prompt": "Using my CV /[DOC] please complete a gap analysis against the following job description /[DOC]. Please identify key skills, experiences, and qualifications required for the job and compare them with what is listed in my CV. Please respond with a HR persona.",
-        "Title": "Job fit analysis"
-      },
-      {
-        "Category": "Word",
-        "Description": "none",
-        "ID": "1f2a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
-        "Prompt": "Rewrite all of these clinician notes in [file] into terms understood at a 9-year-old reading level, replacing any medical jargon. The numbers starting most of the paragraphs (for example, 16/6) are dates. Wherever a term or concept in the notes matches a topic in [file] append the corresponding reference text in the document to a 'References' section of the new document.",
-        "Title": "Rewrite for patient letter"
-      },
-      {
-        "Category": "Word",
-        "Description": "none",
-        "ID": "2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d",
-        "Prompt": "Please transform the patient information leaflet into a very short nursery rhyme to make it more comforting and suitable for a toddler who is apprehensive about their surgery.",
-        "Title": "Rewrite patient leaflet"
-      }
-    ]
+      "Category": "Word",
+      "Description": "In a healthcare setting, you may need to recreate materials that were written for an older audience to a younger one, for instance. You can customise this prompt to meet a variety of needs.",
+      "ID": "2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d",
+      "Prompt": "Please transform the patient information leaflet into a very short nursery rhyme to make it more comforting and suitable for a toddler who is apprehensive about their surgery.",
+      "Title": "Rewrite patient leaflet"
+    }
+  ]
