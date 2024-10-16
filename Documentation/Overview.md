@@ -4,7 +4,7 @@ Prompt Pulse consists of the following components:
 
 - Power App
 - 6 x Power Automate flows.
-- 3 x SharePoint lists for data storage
+- 4 x SharePoint lists for data storage
 
 Separate Dataverse for Teams solution for integration with Prompt Buddy containing 1 Power Automate flow.
 
@@ -46,6 +46,8 @@ From the main screen, the process for sharing a prompt is as follows:
 **Note - Only group chats with a name AND the Prompt Pulse service account/user added as a participant will display in the app. Users will need to add this user manually for the group chat to be visible in the app.**
 
 <img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-share-screenshot.png?raw=true" alt="Prompt Pulse Share Screenshot"><br/>
+
+**Note - Viva Engage and Users radio buttons are only enabled if the 'ShowShareEngage' and 'ShowShareUsers' list items in the Configuration list are set to true.**
 
 ### Viewing/using prompts
 
@@ -119,6 +121,21 @@ To import prompts from Prompt Buddy, follow the steps below:
 
 <img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-import-buddy-screenshot.png?raw=true" alt="Prompt Pulse Import Prompt Buddy Prompts Screenshot"><br/>
 
+#### Reporting
+
+Basic reporting to showcase the adoption of Prompt Pulse is now available in the form of a SharePoint list. A single list item will be created in this list by the app and flows if it does not exist.
+
+The 'Reporting' list shows the following information:
+
+- PromptsSent - The number of prompts sent in Prompt Pulse either directly or via scheduling.
+- AppLaunches - The number of times the app has been launched/opened.
+- PromptsCopied - The number of times prompts have been copied (clicking the prompt card) in the app.
+- PromptsLiked - The total of prompts that have been liked by users.
+
+You may wish to create your own reports using tools such as Excel or PowerBI to visualize this data.
+
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/reporting-list-screenshot?raw=true" alt="Prompt Pulse Reporting List Screenshot"><br/>
+
 ### Tips
 
 - Use a dedicated service account/M365 user when deploying Prompt Pulse (adaptive cards will be sent from this account).
@@ -143,7 +160,7 @@ There are 6 flows that are part of the Prompt Pulse solution, these are listed b
 
 As mentioned earlier there is an additional flow for the Prompt Buddy integration.
 
-- Send Prompt: This flow executes when a list item is created or modified in the 'Prompts' list and sends the prompt to the specified location using adaptive cards or in the case of Viva Engage, a message.
+- Send Prompt: This flow executes when a list item is created or modified in the 'Prompts' list and sends the prompt to the specified location using adaptive cards or in the case of Viva Engage, a message. 
 - Send Scheduled Prompt: This flow runs on a recurrent schedule (5 minutes by default) and is responsible for checking for scheduled prompts in the list and sending these.
 - Like Prompt: This flow runs when a user clicks the **Like Prompt** button in the adaptive cards and adds the prompt to the users' liked prompts.
 - Get Group Chats: This flow is used in the Power App and retrieves a list of group chats that the current user is a member of where the Prompt Pulse account is a member of the chat.
@@ -160,6 +177,7 @@ There are 3 SharePoint lists used in the solution:
 - Prompts: Stores the prompts shared/scheduled in the app.
 - Users: Stores the users who have opened/used Prompt Pulse and their liked prompts.
 - Configuration: Stores configuration settings for Prompt Pulse.
+- Reporting: Stores basic reporting data for Prompt Pulse.
 
 These lists can be easily extended or changed should you wish to modify/customize Prompt Pulse. You can of course edit and delete prompts directly from the list if required. Avoid modifying the values of the GroupId, GroupChatId, TeamId, ChannelId and MessageId columns as these are used heavily in the Power Automate flows.
 

@@ -47,6 +47,12 @@ The app can be customized if you wish, though it's worth noting that customizati
 
 Integration with Prompt Buddy is provided through a single flow (details can be found below) which adds Prompt Buddy prompts to the **Prompts** list and Prompt Pulse prompts to the relevant dataverse tables used by Prompt Buddy. This keeps both solutions in sync and ensures prompts can be accessed from both apps.
 
+## Reporting
+
+Basic reporting can be found in the **Reporting** list in the form of a single list item. This list item is created automatically if it does not exist by the app and flows.
+
+If multiple list items exist in this list, only the first item is updated in terms of the numeric data.
+
 # Flows
 
 Detailed information about the flows used in the solution can be found below:
@@ -125,7 +131,7 @@ This flow is triggered on a recurrent scheduled inside the Dataverse for Teams e
 
 ## Data Source
 
-As detailed in the [Overview](Overview.md) documentation, there are 3 SharePoint lists used in prompt pulse. Please see the details of each list below and what each column is used for:
+As detailed in the [Overview](Overview.md) documentation, there are 4 SharePoint lists used in prompt pulse. Please see the details of each list below and what each column is used for:
 
 ### Prompts list
 
@@ -162,4 +168,12 @@ As detailed in the [Overview](Overview.md) documentation, there are 3 SharePoint
 | -------- | ------- | ------- | 
 | Value  | Single line of text | The configuration value.
 
+### Reporting list
+
+| Column Name    | Type | Used for |
+| -------- | ------- | ------- | 
+| PromptsSent  | Number | The number of prompts sent in Prompt Pulse either directly or via scheduling.
+| AppLaunches  | Number | The number of times the app has been launched/opened.
+| PromptsCopied  | Number | The number of times prompts have been copied (clicking the prompt card) in the app.
+| PromptsLiked  | Number | The total of prompts that have been liked by users.
 
