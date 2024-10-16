@@ -43,7 +43,6 @@ Note - You must create ALL of the columns below even if you are not deploying th
 | ChannelIds    | Multiple lines of text  |
 | GroupChatIds    | Multiple lines of text  |
 | CommunityIds    | Multiple lines of text  |
-| MessageId    | Single line of text  |
 | Scheduled    | Yes/No  | Default value = No |
 | ScheduledDateTime    | Date and time  | Include time |
 | Status    | Choice  | Not Sent, Send, Sent, Failed | Default value = Not Sent
@@ -61,30 +60,52 @@ Note - You must create ALL of the columns below even if you are not deploying th
 | LikedPrompts | Lookup     | Source list = 'Prompts', Select a column = 'ID' |
 | TutorialComplete | Yes/No     | Default value = No |
 
-6. Create a list name 'Configuration'.
+6. Create a list named 'Reporting'.
 7. Create the following columns:
 
 | Column Name    | Type |
 | -------- | ------- | 
-| Value  | Single line of text   
+| PromptsSent  | Number
+| AppLaunches  | Number
+| PromptsCopied  | Number
+| PromptsLiked  | Number
 
-8. Create a list item in the above list with the following details:
+8. Create a list named 'Configuration'.
+9. Create the following columns:
+
+| Column Name    | Type |
+| -------- | ------- | 
+| Value  | Single line of text  
+
+10. Create a list item in the above list with the following details:
 
 Title: AppId
 
 Value: Leave empty
 
-9. Create a second list item in the above list with the following details:
+11. Create a second list item in the above list with the following details:
 
 Title: ServiceAccountUPN
 
 Value: UPN (Email) of your service account
 
-9. Create a third list item in the above list with the following details:
+12. Create a third list item in the above list with the following details:
 
 Title: PromptBuddyInstalled
 
 Value: 'true' (if you wish to integrate with Prompt Buddy) or 'false'.
+
+13. Create a fourth list item in the above list with the following details:
+
+Title: ShowShareEngage
+
+Value: 'true' (if you wish to allow sharing to Viva Engage) or 'false'.
+
+14. Create a fifth list item in the above list with the following details:
+
+Title: ShowShareUsers
+
+Value: 'true' (if you wish to allow sharing to users) or 'false'.
 
 ## Step 2: Deploy Power Apps solution
 
@@ -129,6 +150,7 @@ Before rolling out Prompt Pulse, it is neccessary to configure the permisions on
 1. Amend the permissions on the **Prompts** list (Advanced Settings) to **Create items and edit items that were created by the user**.
 2. Amend the permissions on the **Users** list (Advanced Settings) to **Read items that were created by the user** and **Create items and edit items that were created by the user**.
 3. Break permission inheritance on the **Prompts** and **Users** lists and add only users/groups that will use Prompt Pulse.
+4. Break permission inheritance on the **Configuration** and **Reporting** lists and ensure that only admins have write access to these lists, users should have read access.
 4. Ensure that admins who may need to read, edit and delete all list items have **Full Control**/**Owner** permissions on the SharePoint site.
 
 ## Step 5: Deploy Prompt Buddy Integration
