@@ -50,6 +50,7 @@ Note - You must create ALL of the columns below even if you are not deploying th
 | SyncedToBuddy    | Yes/No  | Default value = No
 | SyncedToPulse    | Yes/No  | Default value = No
 | BuddyId    | Single line of text  |
+| App | Choice | Copilot, Word, PowerPoint, Planner, Excel, Outlook, Teams, Loop, Forms, Whiteboard, Designer, SharePoint, Stream, OneNote, OneDrive |
 
 4. Create a list named 'Users'.
 5. Create the following columns:

@@ -152,6 +152,7 @@ As detailed in the [Overview](Overview.md) documentation, there are 4 SharePoint
 | SyncedToBuddy    | Yes/No  | Whether or not the prompt has been synced to Prompt Buddy (only used if the Prompt Buddy integration is deployed).
 | SyncedToPulse    | Yes/No  | Where or not the prompt has been synced from Prompt Buddy to Pulse (only used if the Prompt Buddy integration is deployed).
 | BuddyId    | Single line of text  | Unique id of the prompt in the Prompt Buddy dataverse prompts table.
+| App | Choice | App that the prompt applies to e.g. Excel.
 
 
 ### Users list
