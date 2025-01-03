@@ -50,6 +50,7 @@ Note - You must create ALL of the columns below even if you are not deploying th
 | SyncedToBuddy    | Yes/No  | Default value = No
 | SyncedToPulse    | Yes/No  | Default value = No
 | BuddyId    | Single line of text  |
+| App | Choice | Copilot, Word, PowerPoint, Planner, Excel, Outlook, Teams, Loop, Forms, Whiteboard, Designer, SharePoint, Stream, OneNote, OneDrive |
 
 4. Create a list named 'Users'.
 5. Create the following columns:
@@ -181,3 +182,9 @@ This flow runs on a recurrent schedule and by default runs every hour, feel free
 19. The integration is now deployed and the flow will automatically sync the prompts in both solutions.
 
 ### Deployment is now complete - enjoy using Prompt Pulse!
+
+## Upgrading from V2
+
+When upgrading from V2 to V3, in addition to importing the V3 solution, be sure to create the new 'App' column in the 'Prompts' list.
+
+See Step 1 - Create SharePoint lists.

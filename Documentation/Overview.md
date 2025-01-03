@@ -29,6 +29,7 @@ When a user launches Prompt Pulse for the first time, they will be taken through
 From the main screen, the process for sharing a prompt is as follows:
 
 - Enter a **title** and the **prompt** in the boxes provided.
+- Select the 'app' that the prompt is designed to be used with.
 - Choose locations to share the prompt to by using the radio buttons - 
 
     Viva Engage Communities
@@ -53,7 +54,7 @@ From the main screen, the process for sharing a prompt is as follows:
 
 From the main screen, users can view the latest 20 prompts. To use a prompt simply click the prompt **'tile'** and the prompt text will be copied to your clipboard. 
 
-You can then paste the prompt into Microsoft 365 Copilot. 
+You can then paste the prompt into Microsoft 365 Copilot/the app that the prompt was designed to be used in.
 
 The **All Prompts** tab allows you to view all prompts that have been shared, text can also be copied by clicking the tile. If the integration with Prompt Buddy is deployed, an icon will be visible showing the 'source' of the prompt (Pulse or Buddy).
 
@@ -92,6 +93,8 @@ A csv file has been provided [Prompts.csv](../Prompts.csv) with pre-built prompt
 
 Note that we've provided an additional format for the sample prompts at [prompts.json](../prompts.json). This is the format used for importing INTO Prompt Buddy. If you want these sample prompts in both places, it may be easier to start by importing this list to Prompt Buddy, then using the import from Prompt Buddy steps below.
 
+**Note - at the time of writing, prompts that are imported from CSV and/or Prompt Buddy will have the 'App' set to 'Copilot', functionality to select the appropriate app for each prompt will be released in the future.**
+
 #### Import from CSV
 
 To import prompts from CSV, follow the steps below:
@@ -121,6 +124,8 @@ To import prompts from Prompt Buddy, follow the steps below:
 
 <img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-import-buddy-screenshot.png?raw=true" alt="Prompt Pulse Import Prompt Buddy Prompts Screenshot"><br/>
 
+**Note - Only 'Copilot' prompts are imported from Prompt Buddy currently.**
+
 #### Reporting
 
 Basic reporting to showcase the adoption of Prompt Pulse is now available in the form of a SharePoint list. A single list item will be created in this list by the app and flows if it does not exist.
@@ -134,7 +139,7 @@ The 'Reporting' list shows the following information:
 
 You may wish to create your own reports using tools such as Excel or PowerBI to visualize this data.
 
-<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/reporting-list-screenshot?raw=true" alt="Prompt Pulse Reporting List Screenshot"><br/>
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-reporting-list-screenshot.png?raw=true" alt="Prompt Pulse Reporting List Screenshot"><br/>
 
 ### Tips
 
