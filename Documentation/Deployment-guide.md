@@ -182,3 +182,9 @@ This flow runs on a recurrent schedule and by default runs every hour, feel free
 19. The integration is now deployed and the flow will automatically sync the prompts in both solutions.
 
 ### Deployment is now complete - enjoy using Prompt Pulse!
+
+## Upgrading from V2
+
+When upgrading from V2 to V3, in addition to importing the V3 solution, be sure to create the new 'App' column in the 'Prompts' list.
+
+See Step 1 - Create SharePoint lists.
