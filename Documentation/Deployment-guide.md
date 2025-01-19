@@ -71,38 +71,40 @@ Note - You must create ALL of the columns below even if you are not deploying th
 | PromptsCopied  | Number
 | PromptsLiked  | Number
 
-8. Create a list named 'Configuration'.
-9. Create the following columns:
+8. Create a single item in the 'Reporting' list with the value of each column set to 0.
+
+9. Create a list named 'Configuration'.
+10. Create the following columns:
 
 | Column Name    | Type |
 | -------- | ------- | 
 | Value  | Single line of text  
 
-10. Create a list item in the above list with the following details:
+11. Create a list item in the above list with the following details:
 
 Title: AppId
 
 Value: Leave empty
 
-11. Create a second list item in the above list with the following details:
+12. Create a second list item in the above list with the following details:
 
 Title: ServiceAccountUPN
 
 Value: UPN (Email) of your service account
 
-12. Create a third list item in the above list with the following details:
+13. Create a third list item in the above list with the following details:
 
 Title: PromptBuddyInstalled
 
 Value: 'true' (if you wish to integrate with Prompt Buddy) or 'false'.
 
-13. Create a fourth list item in the above list with the following details:
+14. Create a fourth list item in the above list with the following details:
 
 Title: ShowShareEngage
 
 Value: 'true' (if you wish to allow sharing to Viva Engage) or 'false'.
 
-14. Create a fifth list item in the above list with the following details:
+15. Create a fifth list item in the above list with the following details:
 
 Title: ShowShareUsers
 
@@ -121,7 +123,17 @@ Value: 'true' (if you wish to allow sharing to users) or 'false'.
 9. Obtain the **'ID'** for the Power App by clicking the elipsis next to the app.
 10. Copy the **App ID** value and paste this into the **Value** column of the list item you created in the **Configuration** list.
 
-## Step 3: Share the app/flows
+## Step 3: Turn on the flows
+
+On occasion the flows are turned off on import and they need to be turned on. Follow the steps below to turn on each flow.
+
+1. Navigate to **Power Apps** as the service account.
+2. Click on the **Flows** tab.
+3. Click on the **Send Prompt** flow. 
+4. Click the 'Turn on' option on the top menu.
+5. Repeat this process for the following flows - **'Send Scheduled Prompt'**, **'Like Prompt'**
+
+## Step 4: Share the app/flows
 
 1. Locate the app under **Apps**.
 2. Share the app with all users who will use Prompt Pulse (you may want to add any administrators as co-owners so they can modify the app if you wish to).
@@ -129,7 +141,7 @@ Value: 'true' (if you wish to allow sharing to users) or 'false'.
 
 You may also wish to share the 5 flows (**'Send Scheduled Prompt'**, **'Send Prompt'**, **'Like Prompt'**, **'Get Group Chats'** and **'Get Engage Communities'**) with admins who may need to view the run history or edit them. You can find them under **Flows** in the **Power Apps** portal or in the **Power Automate** portal.
 
-## Step 3: Add the app to Teams (Optional)
+## Step 5: Add the app to Teams (Optional)
 
 1. Navigate to **Power Apps** as the account you wish to install the app for and click 'Apps' in the left pane, you should see the Prompt Pulse Power App. You may need to select the correct Environment in which you deployed the solution from the Environment menu at the top.
 2. Select the app and click 'Add to Teams' from the top menu bar.
@@ -144,7 +156,7 @@ If you wish to roll the app out via policies, please refer to our general docume
 
 Prompt Pulse can be pre-installed for all users and optionally pinned to the rail if you wish. Or you can deploy the app and allow users to add it to their Teams as a tab.
 
-## Step 4: Configure SharePoint list permissions
+## Step 6: Configure SharePoint list permissions
 
 Before rolling out Prompt Pulse, it is neccessary to configure the permisions on the SharePoint lists to ensure users can only read/write/delete their own items.
 
@@ -154,7 +166,7 @@ Before rolling out Prompt Pulse, it is neccessary to configure the permisions on
 4. Break permission inheritance on the **Configuration** and **Reporting** lists and ensure that only admins have write access to these lists, users should have read access.
 4. Ensure that admins who may need to read, edit and delete all list items have **Full Control**/**Owner** permissions on the SharePoint site.
 
-## Step 5: Deploy Prompt Buddy Integration
+## Step 7: Deploy Prompt Buddy Integration
 
 These steps deploy the integration between Prompt Pulse and Prompt Buddy. This integration is provided in the form of a single Flow which is responsible for syncronizing items from the Prompt Buddy dataverse tables to the Prompts SharePoint list and visa versa.
 
@@ -188,3 +200,18 @@ This flow runs on a recurrent schedule and by default runs every hour, feel free
 When upgrading from V2 to V3, in addition to importing the V3 solution, be sure to create the new 'App' column in the 'Prompts' list.
 
 See Step 1 - Create SharePoint lists.
+
+## Viva Engage Rich Text Posts/Announcements
+
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-vivaengage-post-screenshot.png?raw=true" alt="Prompt Pulse Viva Engage Announcement Screenshot"><br/>
+
+When prompts are shared to Viva Engage, the messages can be posted as announcements with rich text support. 
+
+For this to work, the Service Account used to deploy and set up Prompt Pulse must be an admin of the selected community.
+
+This is a manual step as Prompt Pulse will not automatically set this up. Please therefore make the Service Account an admin of those communities that you will mainly share with.
+
+**Note - The Prompt Pulse app displays all communities that the current user is a member of regardless of the Service Account permissions.**
+
+If the Service Account is not an admin, there is a fallback to use a plain text message.
+

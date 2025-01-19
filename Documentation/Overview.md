@@ -50,6 +50,8 @@ From the main screen, the process for sharing a prompt is as follows:
 
 **Note - Viva Engage and Users radio buttons are only enabled if the 'ShowShareEngage' and 'ShowShareUsers' list items in the Configuration list are set to true.**
 
+**Note - When a prompt is shared to Viva Engage, the message will be posted as Rich Text if the Service Account used to deploy Prompt Pulse is an admin of the selected community. Otherwise a plain text message will be sent. Please see the deployment guide for more details.**
+
 ### Viewing/using prompts
 
 From the main screen, users can view the latest 20 prompts. To use a prompt simply click the prompt **'tile'** and the prompt text will be copied to your clipboard. 
@@ -67,6 +69,14 @@ The adaptive card also has a button which will take a user straight to the **All
 To like/unlike a prompt, simply use the thumbs up icon. This will create a personalized collection of **liked** prompts which can be viewed on the **All Prompts** screen.
 
 Prompts can also be liked from the adaptive card by clicking the **Like Prompt** button. 
+
+### Prompt notifications
+
+The following screnshots show how shared prompts appear in Teams and Viva Engage:
+
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-adaptivecard-screenshot.png?raw=true" alt="Prompt Pulse Adaptive Card Screenshot"><br/>
+
+<img src="https://github.com/pnp/prompt-pulse/blob/main/Documentation/Images/prompt-pulse-vivaengage-post-screenshot.png?raw=true" alt="Prompt Pulse Viva Engage Announcement Screenshot"><br/>
 
 ### Scheduling
 
@@ -155,6 +165,7 @@ You may wish to create your own reports using tools such as Excel or PowerBI to 
 - Sharing prompts in a personal install of Prompt Pulse will also show these prompts in Prompt Pulse when installed as a teams tab.
 - Only group chats that include the Prompt Pulse service account/user will appear in the app. Users will need to add this account into the group chat manually in order for it to display.
 - The Prompt Pulse service account/user will be automatically added to Teams and Engage Communities when a prompt to the location for the first time.
+- Rich Text posts in Viva Engage are only supported if the Service Account is an admin of the Community.
 
 Bear the above in mind when using Prompt Pulse, in a future iteration we will look to add support for sharing and viewing prompts in only the team the app is installed in. 
 
