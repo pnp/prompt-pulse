@@ -131,7 +131,7 @@ On occasion the flows are turned off on import and they need to be turned on. Fo
 2. Click on the **Flows** tab.
 3. Click on the **Send Prompt** flow. 
 4. Click the 'Turn on' option on the top menu.
-5. Repeat this process for the following flows - **'Send Scheduled Prompt'**, **'Like Prompt'**
+5. Repeat this process for the following flows - **'Send Scheduled Prompt'**, **'Like Prompt'**.
 
 ## Step 4: Share the app/flows
 
